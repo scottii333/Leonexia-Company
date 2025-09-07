@@ -5,32 +5,37 @@ import { Progress } from "@/components/ui/progress";
 
 type LoadingProgressProps = {
   color?: string; // Tailwind color/gradient
+  target?: number; // how far the bar should load (default 100)
+  onComplete?: () => void; // ✅ callback when loading finishes
 };
 
 export function LoadingProgress({
-  color = "bg-green-500",
+  color = "bg-gray-500",
+  target = 100,
+  onComplete,
 }: LoadingProgressProps) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setProgress((old) => {
-        if (old >= 100) {
+        if (old >= target) {
           clearInterval(timer);
-          return 100;
+          onComplete?.(); // ✅ fire callback
+          return target;
         }
         return old + 10;
       });
-    }, 500);
+    }, 1500);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [target, onComplete]);
 
   return (
     <Progress
       value={progress}
       className="h-2 mt-2"
-      indicatorClassName={color} // ✅ pass custom color/gradient here
+      indicatorClassName={color}
     />
   );
 }

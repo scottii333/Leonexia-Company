@@ -9,6 +9,11 @@ import {
   CloudCheck,
   Network,
   BadgeDollarSign,
+  Rocket,
+  Lightbulb,
+  HeartHandshake,
+  SearchCheck,
+  GlobeLock,
 } from "lucide-react";
 import { LoadingProgress } from "@/components/LoadingProgress";
 import { HomeGsap } from "@/components/HomeGsap";
@@ -142,7 +147,7 @@ export default function Page() {
                   <CloudCheck size={28} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">Cloud Solutions</h3>
+                  <h4 className="font-semibold text-lg">Cloud Solutions</h4>
                   <p className="text-sm text-gray-500">
                     Scalable infrastructure, seamless integrations
                   </p>
@@ -184,7 +189,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-
         {/* Section for Seo Benefits and Implementation Steps  */}
         <section className="flex flex-col gap-5 items-center mt-[4rem]">
           <div className="w-[18rem] text-center md:w-[50rem]">
@@ -205,7 +209,7 @@ export default function Page() {
              border border-transparent 
              hover:border-green-300 hover:scale-[1.01] 
              transition-all duration-300 ease-in-out 
-             cursor-pointer flex flex-col items-center justify-center p-[2rem] text-center"
+            flex flex-col items-center justify-center p-[2rem] text-center"
             >
               <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-green-100">
                 <Network className="text-green-600" size={35} />
@@ -223,7 +227,7 @@ export default function Page() {
              border border-transparent 
              hover:border-green-300 hover:scale-[1.01] 
              transition-all duration-300 ease-in-out 
-             cursor-pointer flex flex-col items-center justify-center p-[2rem] text-center"
+              flex flex-col items-center justify-center p-[2rem] text-center"
             >
               <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-green-100">
                 <BadgeDollarSign className="text-green-600" size={35} />
@@ -241,7 +245,7 @@ export default function Page() {
              border border-transparent 
              hover:border-green-300 hover:scale-[1.01] 
              transition-all duration-300 ease-in-out 
-             cursor-pointer flex flex-col items-center justify-center p-[2rem] text-center"
+             flex flex-col items-center justify-center p-[2rem] text-center"
             >
               <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-green-100">
                 <CloudCheck className="text-green-600" size={35} />
@@ -263,12 +267,12 @@ export default function Page() {
             className="border border-gray-300 rounded-xl 
              hover:border-green-300 hover:scale-[1.01] 
              transition-all duration-300 ease-in-out 
-             cursor-pointer shadow-lg w-[90%] h-[auto] p-[2rem] mt-[10rem] flex flex-col  gap-10 items-center"
+             shadow-lg w-[90%] h-[auto] p-[2rem] mt-[10rem] flex flex-col  gap-10 items-center"
           >
             <div className="text-center mb-[2rem]">
-              <h3 className="text-[2rem] md:text-[2.5rem] mb-3">
+              <h5 className="text-[2rem] md:text-[2.5rem] mb-3">
                 Quick <span className="text-green-600">SEO</span> Implementation
-              </h3>
+              </h5>
               <p className="text-[1rem] md:text-[1.2rem]">
                 From website build and SEO audit to measurable ranking
                 improvements in 4–6 weeks.
@@ -319,7 +323,135 @@ export default function Page() {
           </div>
         </section>
 
-        <section></section>
+        {/* Section for Why Choose Leonexia */}
+        <section className="mt-[10rem] flex flex-col items-center gap-[3rem] ">
+          <div className="w-[18rem] md:w-[40rem] text-center ">
+            <p className="text-[2rem] md:text-[2.5rem] ">
+              Why Choose Leonexia?
+            </p>
+            <p className="mt-[1rem] text-[1.2rem] md:text-[1.5rem]">
+              Your Trusted Partner in
+              <span className="text-green-600"> Web Development & SEO</span>
+            </p>
+          </div>
+
+          <div className="flex flex-col md:flex-row md:w-[90%] flex-wrap justify-center items-center gap-[3rem]">
+            {/* Card 1 */}
+            <div
+              className="shadow-lg w-[18rem] h-[21rem] md:h-[25rem] md:w-[23rem] flex flex-col items-center justify-center gap-4 p-[2rem] rounded-xl border border-transparent
+       hover:border-green-300 hover:scale-[1.01] 
+       transition-all duration-300 ease-in-out 
+        text-center"
+            >
+              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-orange-100">
+                <Rocket size={40} className="text-orange-600" />
+              </div>
+
+              <p className="font-semibold text-[1.2rem] md:text-[1.5rem]">
+                Fast Delivery
+              </p>
+              <p className="md:text-[1.2rem]">
+                Accelerated development cycles ensure your digital solutions are
+                delivered on time without compromising quality.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div
+              className="shadow-lg w-[18rem] h-[21rem] md:h-[25rem] md:w-[23rem] flex flex-col items-center justify-center gap-4 p-[2rem] rounded-xl border border-transparent
+       hover:border-green-300 hover:scale-[1.01] 
+       transition-all duration-300 ease-in-out 
+    text-center"
+            >
+              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-blue-100">
+                <SearchCheck size={40} className="text-blue-600" />
+              </div>
+              <p className="font-semibold text-[1.2rem] md:text-[1.5rem]">
+                SEO-First Approach
+              </p>
+              <p className="md:text-[1.2rem]">
+                Every project is engineered with SEO best practices baked in,
+                helping your business achieve higher visibility and sustainable
+                growth.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div
+              className="shadow-lg w-[18rem] h-[21rem] md:h-[25rem] md:w-[23rem] flex flex-col items-center justify-center gap-4 p-[2rem] rounded-xl border border-transparent
+       hover:border-green-300 hover:scale-[1.01] 
+       transition-all duration-300 ease-in-out 
+       text-center"
+            >
+              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-yellow-100">
+                <Lightbulb size={40} className="text-yellow-600" />
+              </div>
+              <p className="font-semibold text-[1.2rem] md:text-[1.5rem]">
+                Best Tech Stack
+              </p>
+              <p className="md:text-[1.2rem]">
+                We leverage modern frameworks and industry-proven tools to build
+                scalable, future-ready applications that stand the test of time.
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div
+              className="shadow-lg w-[18rem] h-[21rem] md:h-[25rem] md:w-[23rem] flex flex-col items-center justify-center gap-4 p-[2rem] rounded-xl border border-transparent
+       hover:border-green-300 hover:scale-[1.01] 
+       transition-all duration-300 ease-in-out 
+       text-center"
+            >
+              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-purple-100">
+                <GlobeLock size={40} className="text-purple-600" />
+              </div>
+              <p className="font-semibold text-[1.2rem] md:text-[1.5rem]">
+                Secure Cloud Partner
+              </p>
+              <p className="md:text-[1.2rem]">
+                Enterprise-grade security and cloud infrastructure ensure
+                reliability, scalability, and peace of mind for mission-critical
+                systems.
+              </p>
+            </div>
+
+            {/* Card 5 */}
+            <div
+              className="shadow-lg w-[18rem] h-[21rem] md:h-[25rem] md:w-[23rem] flex flex-col items-center justify-center gap-4 p-[2rem] rounded-xl border border-transparent
+       hover:border-green-300 hover:scale-[1.01] 
+       transition-all duration-300 ease-in-out 
+       text-center"
+            >
+              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-pink-100">
+                <HeartHandshake size={40} className="text-pink-600" />
+              </div>
+              <p className="font-semibold text-[1.2rem] md:text-[1.5rem]">
+                Long-Term Support
+              </p>
+              <p className="md:text-[1.2rem]">
+                We provide continuous monitoring, proactive improvements, and
+                post-launch care to keep your business ahead of the curve.
+              </p>
+            </div>
+
+            <Link
+              href="/schedule"
+              className="shadow-lg w-[18rem] h-[21rem] md:h-[25rem] md:w-[23rem] flex flex-col  justify-center gap-6 p-[2rem] rounded-xl border border-transparent
+     hover:border-green-300 hover:scale-[1.01] 
+     transition-all duration-300 ease-in-out 
+     cursor-pointer text-center"
+            >
+              <p className="font-semibold text-[1.2rem] md:text-[1.5rem] text-gray-900">
+                Schedule Consultation
+              </p>
+              <p className="text-gray-600 text-center md:text-[1.2rem]">
+                Book a strategy call with our team and let’s plan your project
+                together.
+              </p>
+              <ArrowRight size={40} className="text-green-600" />
+            </Link>
+          </div>
+        </section>
       </HomeGsap>
     </main>
   );

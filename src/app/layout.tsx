@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -32,9 +33,10 @@ export default function RootLayout({
           href="https://api.fontshare.com/v2/css?f[]=erode@300,400,500,600,700&display=swap"
         />
       </head>
-      <body className="antialiased font-sans h-[auto] pb-[40rem]">
+      <body className="antialiased font-sans min-h-screen flex flex-col">
         <Header />
-        <main>{children}</main>
+        <main className="flex-grow mb-[5rem]">{children}</main>
+        <Footer />
       </body>
     </html>
   );

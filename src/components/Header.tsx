@@ -61,7 +61,7 @@ export const Header = () => {
         href="/"
         className="relative inline-block text-[2rem] font-semibold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[4px] after:w-1/2 after:bg-green-600"
       >
-        Leonhwa
+        Leonexia
       </Link>
 
       {/* Mobile Nav - Sheet */}

@@ -11,8 +11,6 @@ We help businesses grow by providing modern digital solutions:
 
 ☁️ Cloud Solutions – secure and scalable cloud infrastructures
 
-🚀 MVP Builds – helping startups launch products quickly
-
 Built with Next.js
 and Tailwind CSS
 .

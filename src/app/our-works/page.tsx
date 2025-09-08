@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import Link from "next/link";
 
-export default function MvpBuildPage() {
+export default function OurWorksPage() {
   return (
     <section className="p-8">
       <Breadcrumb>
@@ -21,16 +21,16 @@ export default function MvpBuildPage() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
             <BreadcrumbPage className="text-green-600 font-semibold">
-              MVP Builds
+              Our Works
             </BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
 
-      <h1 className="text-3xl font-bold mt-4">MVP Builds</h1>
+      <h1 className="text-3xl font-bold mt-4">Our Works</h1>
       <p className="mt-2 text-gray-600">
-        We help startups and small teams quickly bring their product ideas to
-        life with lean, scalable MVPs. Validate fast, launch faster.
+        Explore our portfolio of case studies showcasing how we’ve helped
+        businesses transform their ideas into impactful digital solutions.
       </p>
     </section>
   );

@@ -36,17 +36,15 @@ export const Header = () => {
     }
   `;
 
-  // Shared links (appear in both mobile + desktop)
+  // Shared links (show in both mobile + desktop)
   const navLinks = [
     { href: "/web-services", label: "Web Development" },
     { href: "/ui-ux-design", label: "UI/UX Design" },
     { href: "/ai-solutions", label: "AI Solutions" },
     { href: "/cloud-solutions", label: "Cloud Solutions" },
-    { href: "/mvp-build", label: "MVP Builds" },
+    { href: "/our-works", label: "Our Works" },
+    { href: "/company", label: "Who We Are" },
   ];
-
-  // Mobile-only links
-  const mobileOnlyLinks = [{ href: "/company", label: "Who We Are" }];
 
   return (
     <section
@@ -89,13 +87,23 @@ export const Header = () => {
             </VisuallyHidden>
 
             <nav className="mt-[4rem] w-full flex flex-col gap-5 items-center">
-              {[...navLinks, ...mobileOnlyLinks].map(({ href, label }) => (
+              {navLinks.map(({ href, label }) => (
                 <SheetClose asChild key={href}>
                   <Link href={href} className={linkClasses(href)}>
                     {label}
                   </Link>
                 </SheetClose>
               ))}
+              <SheetClose asChild>
+                <Link
+                  href="/schedule"
+                  className="w-[90%] px-4 py-2 bg-green-700 rounded-md text-white text-center
+                  hover:bg-white hover:text-green-700 border border-green-700
+                  transition-colors duration-300"
+                >
+                  Contact Us
+                </Link>
+              </SheetClose>
             </nav>
           </SheetContent>
         </Sheet>

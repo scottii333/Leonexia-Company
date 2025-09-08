@@ -32,7 +32,7 @@ export default function RootLayout({
           href="https://api.fontshare.com/v2/css?f[]=erode@300,400,500,600,700&display=swap"
         />
       </head>
-      <body className="antialiased font-sans h-[200vh]">
+      <body className="antialiased font-sans h-[auto] pb-[40rem]">
         <Header />
         <main>{children}</main>
       </body>

@@ -185,6 +185,7 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Section for Seo Benefits and Implementation Steps  */}
         <section className="flex flex-col gap-5 items-center mt-[4rem]">
           <div className="w-[18rem] text-center md:w-[50rem]">
             <h2 className="text-[2rem] md:text-[2.5rem]">
@@ -317,6 +318,8 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        <section></section>
       </HomeGsap>
     </main>
   );

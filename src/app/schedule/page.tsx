@@ -85,10 +85,10 @@ export default function ConsultationPage() {
         <p className="mt-1">
           Email us at{" "}
           <a
-            href="mailto:hello@leonhwa.com"
+            href="mailto:hello@Leonexia.com"
             className="text-green-600 font-medium hover:underline"
           >
-            hello@leonhwa.com
+            hello@Leonexia.com
           </a>
         </p>
       </div>

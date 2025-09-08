@@ -31,7 +31,7 @@ export default function CompanyPage() {
       {/* ✅ Page content */}
       <h1 className="text-3xl font-bold mt-4">Who We Are</h1>
       <p className="mt-2 text-gray-600">
-        We are <strong>Leonhwa</strong>, a 5-member startup of passionate
+        We are <strong>Leonexia</strong>, a 5-member startup of passionate
         developers and designers. Our mission is to deliver modern, scalable,
         and user-friendly digital solutions that help businesses grow and adapt
         to the future.

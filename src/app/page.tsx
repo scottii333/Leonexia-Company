@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <main className="">
       <HomeGsap>
-        {/* Leonhwa Hero Section  */}
+        {/* Leonexia Hero Section  */}
         <section className="h-auto w-full  flex flex-col md:flex-row">
           {/* Left: Text Content */}
           <div
@@ -93,7 +93,7 @@ export default function Page() {
               <h3 className="text-lg font-semibold text-gray-900">
                 Website Development
               </h3>
-              <p className="text-sm text-gray-500">LeonHwa Implementation</p>
+              <p className="text-sm text-gray-500">Leonexia Implementation</p>
 
               {/* Features */}
               <div className="flex justify-between mt-3">

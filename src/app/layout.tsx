@@ -4,11 +4,11 @@ import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
   title: {
-    default: "Web Development in the Philippines | Leonhwa",
-    template: "%s | Leonhwa",
+    default: "Web Development in the Philippines | Leonexia",
+    template: "%s | Leonexia",
   },
   description:
-    "Leonhwa offers expert Web Development in the Philippines along with UI/UX Design, AI Solutions, Cloud Consulting, and MVP builds tailored for businesses.",
+    "Leonexia offers expert Web Development in the Philippines along with UI/UX Design, AI Solutions, Cloud Consulting, and MVP builds tailored for businesses.",
   keywords: [
     "Web Development Philippines",
     "Philippines Web Development Company",

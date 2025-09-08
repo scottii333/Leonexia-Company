@@ -7,6 +7,8 @@ import {
   Zap,
   Shield,
   CloudCheck,
+  Network,
+  BadgeDollarSign,
 } from "lucide-react";
 import { LoadingProgress } from "@/components/LoadingProgress";
 import { HomeGsap } from "@/components/HomeGsap";
@@ -178,6 +180,139 @@ export default function Page() {
                   <p className="text-green-600 text-base">24/7</p>
                   <p className="text-gray-500 text-xs">Support</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex flex-col gap-5 items-center mt-[4rem]">
+          <div className="w-[18rem] text-center md:w-[50rem]">
+            <h2 className="text-[2rem] md:text-[2.5rem]">
+              <span className="text-green-600">Google SEO </span>
+              Solutions for Modern Business
+            </h2>
+            <p className="mt-[1rem] text-[1.2rem]v md:text-[1.5rem]">
+              Rank higher on Google, drive targeted traffic, and convert
+              searches into customers. Stay ahead of competitors with proven SEO
+              strategies designed for Google’s algorithms.
+            </p>
+          </div>
+
+          <div className="flex flex-col flex-wrap justify-center items-center md:flex-row gap-[1.5rem]">
+            <div
+              className="w-[18rem] h-[18rem] shadow-lg rounded-md 
+             border border-transparent 
+             hover:border-green-300 hover:scale-[1.01] 
+             transition-all duration-300 ease-in-out 
+             cursor-pointer flex flex-col items-center justify-center p-[2rem] text-center"
+            >
+              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-green-100">
+                <Network className="text-green-600" size={35} />
+              </div>
+              <p className="mt-2 text-[1.3rem] font-bold ">
+                60% <br />
+                <span className="font-semibold text-[1rem]">
+                  More Google Traffic
+                </span>
+              </p>
+              <p>Boost visibility and organic clicks with optimized pages.</p>
+            </div>
+            <div
+              className="w-[18rem] h-[18rem] shadow-lg rounded-md 
+             border border-transparent 
+             hover:border-green-300 hover:scale-[1.01] 
+             transition-all duration-300 ease-in-out 
+             cursor-pointer flex flex-col items-center justify-center p-[2rem] text-center"
+            >
+              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-green-100">
+                <BadgeDollarSign className="text-green-600" size={35} />
+              </div>
+              <p className="mt-2 text-[1.3rem] font-bold ">
+                10x <br />
+                <span className="font-semibold text-[1rem]">
+                  Turn search into measurable sales and leads.
+                </span>
+              </p>
+              <p>Boost visibility and organic clicks with optimized pages.</p>
+            </div>
+            <div
+              className="w-[18rem] h-[18rem] shadow-lg rounded-md 
+             border border-transparent 
+             hover:border-green-300 hover:scale-[1.01] 
+             transition-all duration-300 ease-in-out 
+             cursor-pointer flex flex-col items-center justify-center p-[2rem] text-center"
+            >
+              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-green-100">
+                <CloudCheck className="text-green-600" size={35} />
+              </div>
+              <p className="mt-2 text-[1.3rem] font-bold ">
+                24/7 <br />
+                <span className="font-semibold text-[1rem]">
+                  Internet Presence
+                </span>
+              </p>
+              <p>
+                Be discoverable around the clock with strong rankings across
+                devices.
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="border border-gray-300 rounded-xl 
+             hover:border-green-300 hover:scale-[1.01] 
+             transition-all duration-300 ease-in-out 
+             cursor-pointer shadow-lg w-[90%] h-[auto] p-[2rem] mt-[10rem] flex flex-col  gap-10 items-center"
+          >
+            <div className="text-center mb-[2rem]">
+              <h3 className="text-[2rem] md:text-[2.5rem] mb-3">
+                Quick <span className="text-green-600">SEO</span> Implementation
+              </h3>
+              <p className="text-[1rem] md:text-[1.2rem]">
+                From website build and SEO audit to measurable ranking
+                improvements in 4–6 weeks.
+              </p>
+            </div>
+
+            <div className="flex flex-col flex-wrap md:flex-row justify-center gap-[5rem] mb-[2rem]">
+              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+                  01
+                </p>
+                <p className="font-semibold text-[1.3rem]">Assess</p>
+                <p className="text-[1rem]">
+                  Audit your site and identify SEO opportunities.
+                </p>
+              </div>
+
+              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+                  02
+                </p>
+                <p className="font-semibold text-[1.3rem]">Design</p>
+                <p className="text-[1rem]">
+                  Create a modern, responsive design with SEO in mind.
+                </p>
+              </div>
+
+              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+                  03
+                </p>
+                <p className="font-semibold text-[1.3rem]">Develop & Deploy</p>
+                <p className="text-[1rem]">
+                  Build a fast, secure site with on-page SEO optimization.
+                </p>
+              </div>
+
+              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+                  04
+                </p>
+                <p className="font-semibold text-[1.3rem]">Optimize</p>
+                <p className="text-[1rem]">
+                  Track performance, refine SEO, and scale results.
+                </p>
               </div>
             </div>
           </div>

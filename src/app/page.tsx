@@ -13,10 +13,10 @@ import { HomeGsap } from "@/components/HomeGsap";
 
 export default function Page() {
   return (
-    <main className="">
+    <main>
       <HomeGsap>
-        {/* Leonexia Hero Section  */}
-        <section className="h-auto w-full  flex flex-col md:flex-row">
+        {/* Leonexia Hero Section */}
+        <section className="h-auto w-full flex flex-col md:flex-row">
           {/* Left: Text Content */}
           <div
             id="left-col"
@@ -44,61 +44,57 @@ export default function Page() {
               />
             </Link>
           </div>
+
           {/* Right: Grid Background */}
           <div
             id="right-col"
-            className="opacity-0 pb-20 h-[auto] min-w-[auto] md:w-[50%]  border bg-grid flex gap-3 flex-col items-center  "
+            className="opacity-0 pb-20 h-auto min-w-auto md:w-[50%] border bg-grid flex gap-3 flex-col items-center"
           >
-            {/* Top Section with building icon + loading bar */}
+            {/* Top Section */}
             <div
               id="top-section"
               className="opacity-0 mt-10 flex gap-2 p-1 w-[80%] h-[4.5rem]"
             >
-              {/* Building Icon */}
               <div className="bg-gray-200 rounded-md p-2 w-[4rem] h-[4rem] flex items-center justify-center">
-                <Building2 className="" size={30} />
+                <Building2 size={30} />
               </div>
               <div className="w-full">
                 <p className="text-[0.8rem]">Traditional Operations</p>
                 <p className="text-[0.8rem]">
                   Manual Processes, Limited Insights
                 </p>
-                {/* Loading Bar */}
-                <LoadingProgress target={50} />
+                {/* First Loader */}
+                <LoadingProgress id="progress-1" target={40} />
               </div>
             </div>
-            {/* Middle Section with lines and circle */}
+
+            {/* Middle Section */}
             <div
               id="middle-section"
-              className="opacity-0 flex items-center justify-center w-[80%] "
+              className="opacity-0 flex items-center justify-center w-[80%]"
             >
-              {/* Left line */}
               <div className="h-[2px] flex-1 bg-gradient-to-r from-gray-300 via-orange-500/70 to-orange-500" />
-
-              {/* Circle with brain icon */}
               <div className="mx-4 w-14 h-14 rounded-full bg-orange-600 flex items-center justify-center">
                 <Brain size={28} className="text-white" />
               </div>
-
-              {/* Right line */}
               <div className="h-[2px] flex-1 bg-gradient-to-r from-orange-500 via-orange-500/70 to-green-500" />
             </div>
 
-            {/* Bottom Section with 2 cards */}
+            {/* Bottom Section Left */}
             <div
               id="bottom-left"
               className="opacity-0 w-[80%] bg-white/70 rounded-2xl shadow-sm border border-gray-200 p-6 text-center"
             >
-              {/* Title */}
               <h3 className="text-lg font-semibold text-gray-900">
                 Website Development
               </h3>
               <p className="text-sm text-gray-500">Leonexia Implementation</p>
 
-              {/* Features */}
               <div className="flex justify-between mt-3">
-                {/* Assess */}
-                <div className="flex flex-col items-center">
+                <div
+                  id="assess"
+                  className="opacity-0 flex flex-col items-center"
+                >
                   <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-blue-100">
                     <ListTodo className="text-blue-600" size={28} />
                   </div>
@@ -107,8 +103,10 @@ export default function Page() {
                   </p>
                 </div>
 
-                {/* Deploy */}
-                <div className="flex flex-col items-center">
+                <div
+                  id="deploy"
+                  className="opacity-0 flex flex-col items-center"
+                >
                   <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-orange-100">
                     <Zap className="text-orange-500" size={28} />
                   </div>
@@ -117,8 +115,10 @@ export default function Page() {
                   </p>
                 </div>
 
-                {/* Optimize */}
-                <div className="flex flex-col items-center">
+                <div
+                  id="optimize"
+                  className="opacity-0 flex flex-col items-center"
+                >
                   <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-green-100">
                     <Shield className="text-green-600" size={28} />
                   </div>
@@ -129,7 +129,7 @@ export default function Page() {
               </div>
             </div>
 
-            {/* Right Card with cloud icon + title + progress + stats */}
+            {/* Bottom Section Right */}
             <div
               id="bottom-right"
               className="opacity-0 w-[80%] p-4 rounded-xl border bg-white/70 shadow-sm"
@@ -140,33 +140,43 @@ export default function Page() {
                   <CloudCheck size={28} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">
-                    AI-Powered Enterprise
-                  </h3>
+                  <h3 className="font-semibold text-lg">Cloud Solutions</h3>
                   <p className="text-sm text-gray-500">
-                    Automated workflows, intelligent insights
+                    Scalable infrastructure, seamless integrations
                   </p>
                 </div>
               </div>
 
-              {/* Progress bar */}
+              {/* Second Loader */}
               <div className="mt-4">
-                <LoadingProgress color="bg-gradient-to-r from-red-500 via-orange-500 to-green-500" />
+                <LoadingProgress
+                  id="progress-2"
+                  color="bg-gradient-to-r from-red-500 via-orange-500 to-green-500"
+                />
               </div>
 
               {/* Stats */}
               <div className="flex justify-between mt-4 text-sm font-semibold">
-                <div className="text-center">
-                  <p className="text-blue-600 text-base">3x</p>
-                  <p className="text-gray-500 text-xs">Efficiency</p>
+                <div
+                  id="stat-1"
+                  className="opacity-0 translate-y-4 text-center"
+                >
+                  <p className="text-blue-600 text-base">99.9%</p>
+                  <p className="text-gray-500 text-xs">Uptime</p>
                 </div>
-                <div className="text-center">
-                  <p className="text-orange-500 text-base">60%</p>
-                  <p className="text-gray-500 text-xs">Cost Reduction</p>
+                <div
+                  id="stat-2"
+                  className="opacity-0 translate-y-4 text-center"
+                >
+                  <p className="text-orange-500 text-base">50%</p>
+                  <p className="text-gray-500 text-xs">Cost Savings</p>
                 </div>
-                <div className="text-center">
+                <div
+                  id="stat-3"
+                  className="opacity-0 translate-y-4 text-center"
+                >
                   <p className="text-green-600 text-base">24/7</p>
-                  <p className="text-gray-500 text-xs">Automation</p>
+                  <p className="text-gray-500 text-xs">Support</p>
                 </div>
               </div>
             </div>

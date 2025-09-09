@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { ScheduleButton } from "./ScheduleButton";
 
 export const Footer = () => {
   return (
@@ -67,9 +68,12 @@ export const Footer = () => {
             >
               Who We Are
             </Link>
-            <Link href="/schedule" className="hover:text-green-600 transition">
+            <ScheduleButton
+              className="hover:text-green-600 transition text-left"
+              withArrow={false}
+            >
               Schedule a Consultation
-            </Link>
+            </ScheduleButton>
           </nav>
         </div>
 

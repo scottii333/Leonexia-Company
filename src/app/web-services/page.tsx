@@ -24,10 +24,10 @@ import Link from "next/link";
 
 export default function WebServicesPage() {
   return (
-    <main className="">
+    <main>
       <HomeGsap>
         {/* ✅ Breadcrumbs */}
-        <Breadcrumb>
+        <Breadcrumb className="p-[2rem]">
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink asChild>

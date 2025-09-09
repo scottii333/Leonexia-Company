@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function OurWorksPage() {
   return (
-    <section className="p-8">
+    <main>
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -32,6 +32,6 @@ export default function OurWorksPage() {
         Explore our portfolio of case studies showcasing how we’ve helped
         businesses transform their ideas into impactful digital solutions.
       </p>
-    </section>
+    </main>
   );
 }

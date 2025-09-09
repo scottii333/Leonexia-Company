@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function CompanyPage() {
   return (
-    <section className="p-8">
+    <main>
       {/* ✅ Breadcrumbs */}
       <Breadcrumb>
         <BreadcrumbList>
@@ -49,6 +49,6 @@ export default function CompanyPage() {
         We’re not just building software—we’re building partnerships and
         solutions that last.
       </p>
-    </section>
+    </main>
   );
 }

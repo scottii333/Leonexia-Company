@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function AutomationSolutionsPage() {
   return (
-    <section className="p-8">
+    <main>
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -32,6 +32,6 @@ export default function AutomationSolutionsPage() {
         We integrate automation into your workflows—automation, analytics, and
         smart solutions that make your business more efficient.
       </p>
-    </section>
+    </main>
   );
 }

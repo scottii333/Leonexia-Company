@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function CloudSolutionsPage() {
   return (
-    <section className="p-8">
+    <main>
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -32,6 +32,6 @@ export default function CloudSolutionsPage() {
         We design, deploy, and manage cloud-native infrastructure to ensure your
         applications are secure, scalable, and always available.
       </p>
-    </section>
+    </main>
   );
 }

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   ArrowRight,
   Building2,
@@ -40,7 +39,7 @@ export default function Page() {
               value.
             </p>
             <ScheduleButton
-              className="group bg-black text-white border border-black p-3 rounded-md w-[14rem] text-center font-medium md:text-[1.5rem] md:w-[20rem]
+              className="group flex items-center gap-2 bg-black text-white border border-black p-3 rounded-md w-[13rem] text-center font-medium md:text-[1.5rem] md:w-[18rem]
              transition-colors duration-300 
              hover:bg-white hover:text-green-600"
             />
@@ -428,12 +427,12 @@ export default function Page() {
               </p>
             </div>
 
-            <Link
-              href="/schedule"
-              className="shadow-lg w-[18rem] h-[21rem] md:h-[25rem] md:w-[23rem] flex flex-col  justify-center gap-6 p-[2rem] rounded-xl border border-transparent
-     hover:border-green-300 hover:scale-[1.01] 
-     transition-all duration-300 ease-in-out 
-     cursor-pointer text-center"
+            <ScheduleButton
+              className="shadow-lg w-[18rem] h-[21rem] md:h-[25rem] md:w-[23rem] flex flex-col justify-center gap-6 p-[2rem] rounded-xl border border-transparent
+             hover:border-green-300 hover:scale-[1.01] 
+             transition-all duration-300 ease-in-out 
+             cursor-pointer text-center"
+              withArrow={false} // disable default small arrow
             >
               <p className="font-semibold text-[1.2rem] md:text-[1.5rem] text-gray-900">
                 Schedule Consultation
@@ -443,7 +442,7 @@ export default function Page() {
                 together.
               </p>
               <ArrowRight size={40} className="text-green-600" />
-            </Link>
+            </ScheduleButton>
           </div>
         </section>
       </HomeGsap>

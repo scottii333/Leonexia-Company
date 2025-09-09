@@ -1,41 +1,44 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { getCalApi } from "@calcom/embed-react";
-import { ArrowRight } from "lucide-react"; // assuming you use lucide
+import { ArrowRight } from "lucide-react";
 
 export const ScheduleButton = ({ className }: { className?: string }) => {
-  const [calReady, setCalReady] = useState(false);
+  const [ready, setReady] = useState(false);
+  const NAMESPACE = "leonexiaModal";
 
   useEffect(() => {
     (async () => {
-      try {
-        const cal = await getCalApi();
-        cal("ui", {
-          styles: { branding: { brandColor: "#16a34a" } },
-          theme: "light",
-        });
-        setCalReady(true);
-      } catch (error) {
-        console.error("Cal.com API failed to initialize:", error);
-      }
-    })();
+      const cal = await getCalApi({ namespace: NAMESPACE });
+
+      const brand = { "cal-brand": "#16a34a" } as const;
+
+      cal("ui", {
+        theme: "light",
+        cssVarsPerTheme: {
+          light: brand,
+          dark: brand, // required ng type kahit di mo ginagamit
+        },
+      });
+
+      // optional pero useful para iwas iframe error sa click
+      cal("preload", { calLink: "leonexia/30min" });
+
+      setReady(true);
+    })().catch((e) => console.error(e));
   }, []);
 
-  async function openCal() {
-    if (!calReady) return;
-    try {
-      const cal = await getCalApi();
-      cal("modal", { calLink: "leonexia/30min" });
-    } catch (error) {
-      console.error("Cal.com failed to open:", error);
-    }
-  }
+  const openCal = useCallback(async () => {
+    if (!ready) return;
+    const cal = await getCalApi({ namespace: NAMESPACE });
+    cal("modal", { calLink: "leonexia/30min" });
+  }, [ready]);
 
   return (
     <button
       onClick={openCal}
-      disabled={!calReady}
+      disabled={!ready}
       className={className}
       aria-label="Schedule a consultation via Cal.com"
     >

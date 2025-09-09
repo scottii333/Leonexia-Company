@@ -9,12 +9,12 @@ export const metadata: Metadata = {
     template: "%s | Leonexia",
   },
   description:
-    "Leonexia offers expert Web Development in the Philippines along with UI/UX Design, AI Solutions, Cloud Consulting,  tailored for businesses.",
+    "Leonexia offers expert Web Development in the Philippines along with UI/UX Design, Automation Solutions, Cloud Consulting,  tailored for businesses.",
   keywords: [
     "Web Development Philippines",
     "Philippines Web Development Company",
     "UI/UX Design Philippines",
-    "AI Solutions Philippines",
+    "Automation Solutions Philippines",
     "Cloud Solutions Philippines",
     "Software Development Philippines",
   ],

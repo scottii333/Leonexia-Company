@@ -12,6 +12,7 @@ import {
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
+import { ScheduleButton } from "./ScheduleButton";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { usePathname } from "next/navigation";
 
@@ -93,16 +94,7 @@ export const Header = () => {
                   </Link>
                 </SheetClose>
               ))}
-              <SheetClose asChild>
-                <Link
-                  href="/schedule"
-                  className="w-[90%] px-4 py-2 bg-green-700 rounded-md text-white text-center
-                  hover:bg-white hover:text-green-700 border border-green-700
-                  transition-colors duration-300"
-                >
-                  Contact Us
-                </Link>
-              </SheetClose>
+              <SheetClose asChild></SheetClose>
             </nav>
           </SheetContent>
         </Sheet>
@@ -115,14 +107,14 @@ export const Header = () => {
             {label}
           </Link>
         ))}
-        <Link
-          href="/schedule"
+        <ScheduleButton
           className="md:px-4 md:py-2 md:bg-green-700 md:rounded-md md:text-white
-          md:hover:bg-white md:hover:text-green-700 md:border md:border-green-700
-          transition-colors duration-300"
+    md:hover:bg-white md:hover:text-green-700 md:border md:border-green-700
+    transition-colors duration-300"
+          withArrow={false}
         >
-          Contact Us
-        </Link>
+          Schedule Now
+        </ScheduleButton>
       </nav>
     </section>
   );

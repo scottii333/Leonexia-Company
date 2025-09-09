@@ -39,7 +39,7 @@ export default function CompanyPage() {
 
       <p className="mt-4 text-gray-600 leading-relaxed">
         Our expertise spans across <strong>Web Development</strong>,{" "}
-        <strong>UI/UX Design</strong>, <strong>AI Solutions</strong>,{" "}
+        <strong>UI/UX Design</strong>, <strong>Automation Solutions</strong>,{" "}
         <strong>Cloud Infrastructure</strong>, We combine creativity, technical
         skill, and a user-first mindset to craft products that make an impact.
       </p>

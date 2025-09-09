@@ -23,8 +23,8 @@ export const Footer = () => {
             </strong>
             , along with{" "}
             <strong className="text-green-600">UI/UX Design</strong>,{" "}
-            <strong className="text-green-600">AI Solutions</strong>, and{" "}
-            <strong className="text-green-600">Cloud Consulting</strong> —
+            <strong className="text-green-600">Automation Solutions</strong>,
+            and <strong className="text-green-600">Cloud Consulting</strong> —
             tailored for businesses of all sizes.
           </p>
         </div>
@@ -40,10 +40,10 @@ export const Footer = () => {
               Web Development
             </Link>
             <Link
-              href="/ai-solutions"
+              href="/automation-solutions"
               className="hover:text-green-600 transition"
             >
-              AI Solutions
+              Automation Solutions
             </Link>
             <Link
               href="/cloud-solutions"

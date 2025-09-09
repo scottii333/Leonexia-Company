@@ -7,7 +7,7 @@ We help businesses grow by providing modern digital solutions:
 
 🎨 UI/UX Design – clean, responsive, and user-centered interfaces
 
-🤖 AI Solutions – automation, machine learning, and intelligent systems
+🤖 Automation Solution – Workflow automation and intelligent systems
 
 ☁️ Cloud Solutions – secure and scalable cloud infrastructures
 

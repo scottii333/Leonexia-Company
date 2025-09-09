@@ -39,7 +39,7 @@ export const Header = () => {
   // Shared links (show in both mobile + desktop)
   const navLinks = [
     { href: "/web-services", label: "Web Development" },
-    { href: "/ai-solutions", label: "AI Solutions" },
+    { href: "/automation-solutions", label: "Automation Solutions" },
     { href: "/cloud-solutions", label: "Cloud Solutions" },
     { href: "/our-works", label: "Our Works" },
     { href: "/company", label: "Who We Are" },

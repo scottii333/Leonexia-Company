@@ -5,7 +5,7 @@ import { ScheduleButton } from "./ScheduleButton";
 export const Footer = () => {
   return (
     <footer
-      className="bg-grid min-h-[15rem] border-green-500 p-[4rem]  
+      className="bg-grid min-h-[15rem] border-green-500 p-[2rem] md:p-[4rem]  
       "
       role="contentinfo"
     >

@@ -1,10 +1,19 @@
 "use client";
-
 import { useEffect, useState, useCallback } from "react";
 import { getCalApi } from "@calcom/embed-react";
 import { ArrowRight } from "lucide-react";
 
-export const ScheduleButton = ({ className }: { className?: string }) => {
+type ScheduleButtonProps = {
+  className?: string;
+  children?: React.ReactNode;
+  withArrow?: boolean;
+};
+
+export const ScheduleButton = ({
+  className = "",
+  children = "Schedule Consultation",
+  withArrow = true,
+}: ScheduleButtonProps) => {
   const [ready, setReady] = useState(false);
   const NAMESPACE = "leonexiaModal";
 
@@ -18,13 +27,11 @@ export const ScheduleButton = ({ className }: { className?: string }) => {
         theme: "light",
         cssVarsPerTheme: {
           light: brand,
-          dark: brand, // required ng type kahit di mo ginagamit
+          dark: brand,
         },
       });
 
-      // optional pero useful para iwas iframe error sa click
       cal("preload", { calLink: "leonexia/30min" });
-
       setReady(true);
     })().catch((e) => console.error(e));
   }, []);
@@ -37,16 +44,14 @@ export const ScheduleButton = ({ className }: { className?: string }) => {
 
   return (
     <button
+      type="button"
       onClick={openCal}
       disabled={!ready}
-      className={className}
+      className={className} // no defaults, purely consumer-controlled
       aria-label="Schedule a consultation via Cal.com"
     >
-      Schedule Consultation
-      <ArrowRight
-        className="inline-block ml-5 text-white transition-colors duration-300 group-hover:text-green-600"
-        size={16}
-      />
+      {children}
+      {withArrow && <ArrowRight size={16} />}
     </button>
   );
 };

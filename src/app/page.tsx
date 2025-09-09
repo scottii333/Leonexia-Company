@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { LoadingProgress } from "@/components/LoadingProgress";
 import { HomeGsap } from "@/components/HomeGsap";
+import { ScheduleButton } from "@/components/ScheduleButton";
 
 export default function Page() {
   return (
@@ -38,18 +39,11 @@ export default function Page() {
               workflows, boost engagement, and transform how businesses deliver
               value.
             </p>
-            <Link
-              href="/schedule"
+            <ScheduleButton
               className="group bg-black text-white border border-black p-3 rounded-md w-[14rem] text-center font-medium md:text-[1.5rem] md:w-[20rem]
              transition-colors duration-300 
              hover:bg-white hover:text-green-600"
-            >
-              Schedule Consultation
-              <ArrowRight
-                className="inline-block ml-5 text-white transition-colors duration-300 group-hover:text-green-600"
-                size={16}
-              />
-            </Link>
+            />
           </div>
 
           {/* Right: Grid Background */}

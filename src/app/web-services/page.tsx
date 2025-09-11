@@ -17,6 +17,9 @@ import {
   Network,
   BadgeDollarSign,
   CloudCheck,
+  Code,
+  CircleCheckBig,
+  ShoppingCart,
 } from "lucide-react";
 import { ScheduleButton } from "@/components/ScheduleButton";
 import { LoadingProgress } from "@/components/LoadingProgress";
@@ -212,7 +215,7 @@ export default function WebServicesPage() {
           </div>
         </section>
 
-        {/* Section for Seo Benefits and Implementation Steps  */}
+        {/* Section for Benefits and what we offer  */}
         <section className="flex flex-col gap-5 items-center mt-[4rem]">
           <div className="w-[18rem] text-center md:w-[50rem]">
             <h2 className="text-[2rem] md:text-[2.5rem]">
@@ -288,61 +291,262 @@ export default function WebServicesPage() {
             </div>
           </div>
 
-          <div
-            className="border border-gray-300 rounded-xl 
-             hover:border-green-300 hover:scale-[1.01] 
-             transition-all duration-300 ease-in-out 
-             shadow-lg w-[90%] h-[auto] p-[2rem] mt-[10rem] flex flex-col  gap-10 items-center"
-          >
-            <div className="text-center mb-[2rem]">
-              <h5 className="text-[2rem] md:text-[2.5rem] mb-3">
-                Quick <span className="text-green-600">SEO</span> Implementation
-              </h5>
-              <p className="text-[1rem] md:text-[1.2rem]">
-                From website build and SEO audit to measurable ranking
-                improvements in 4–6 weeks.
-              </p>
+          <div className=" h-[auto] w-[auto] p-[1rem] flex flex-col justify-center items-center text-center  mt-[5rem]">
+            <p className="text-[2rem]">
+              What <span className="text-green-600">We Offer</span>
+            </p>
+            <p className="text-[1.2rem] md:text-[1.5rem] mt-[1rem] md:w-[60%]">
+              From interactive prototypes to full-scale digital solutions, we
+              bring your vision to life with innovative design and
+              development—whether it’s e-commerce, service-based platforms, or
+              custom business websites.
+            </p>
+          </div>
+
+          {/* Service Offerings */}
+          <div className="mt-[3rem] w-full flex flex-col gap-[5rem] justify-center items-center">
+            {/* Card 1 */}
+            <div className="hover:border-green-300 transition-all duration-300 ease-in-out border border-gray-300 rounded-xl h-[auto] w-[90%] relative bg-white shadow-md flex flex-col md:flex-row p-[1rem] gap-[1rem] ">
+              <div
+                className="absolute -top-4 left-1/2 -translate-x-1/2 
+                 bg-gradient-to-r from-green-500 via-lime-500 to-emerald-600
+                 text-white text-xs md:text-sm font-semibold 
+                 px-5 py-1.5 rounded-full shadow-lg tracking-wide"
+              >
+                Most Popular
+              </div>
+
+              <div className="flex flex-col gap-[1rem] w-full md:w-[70%]">
+                <div className="flex justify-center items-center ">
+                  <div className="bg-green-500 h-[4rem] w-[5rem] m-[1rem]  rounded-md flex items-center justify-center">
+                    <Code size={30} className="text-white " />
+                  </div>
+
+                  <div>
+                    <p className="text-[1.5rem]">Next.js Development</p>
+                    <p>
+                      High-performance websites built with Next.js, React, and
+                      modern tools. Perfect for startups, services, and growing
+                      businesses.
+                    </p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Custom Next.js websites</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>GSAP animations</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Responsive design systems</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>API & third-party integrations</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>SEO & performance optimization</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>UI/UX design & prototyping</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Workflow automation included</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>1yr support included</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-[1rem] md:justify-center w-full md:w-[30%]">
+                <p className="text-[1.5rem] md:text-[2rem] font-semibold">
+                  Custom Quote
+                </p>
+                <ScheduleButton
+                  className="cursor-pointer group bg-green-600 text-white border border-green-600 p-3 rounded-md w-[14rem] text-center font-medium md:text-[1.1em] md:w-[18rem] 
+              transition-colors duration-300
+              hover:bg-white hover:text-green-600 hover:border-green-600"
+                  withArrow={false} // disable default arrow
+                >
+                  Schedule a Consultation
+                  <ArrowRight
+                    className="inline-block ml-5 text-white transition-colors duration-300 group-hover:text-green-600"
+                    size={16}
+                  />
+                </ScheduleButton>
+                <p>Free Consultation included*</p>
+              </div>
             </div>
 
-            <div className="flex flex-col flex-wrap md:flex-row justify-center gap-[5rem] mb-[2rem]">
-              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
-                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
-                  01
-                </p>
-                <p className="font-semibold text-[1.3rem]">Assess</p>
-                <p className="text-[1rem]">
-                  Audit your site and identify SEO opportunities.
-                </p>
+            {/* Card 2 */}
+
+            <div className="hover:border-orange-300 transition-all duration-300 ease-in-out border border-gray-300 rounded-xl h-[auto] w-[90%] relative bg-white shadow-md flex flex-col md:flex-row p-[1rem] gap-[1rem]">
+              <div
+                className="absolute -top-4 left-1/2 -translate-x-1/2 
+                 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500
+                 text-white text-xs md:text-sm font-semibold 
+                 px-5 py-1.5 rounded-full shadow-lg tracking-wide"
+              >
+                Best Value
               </div>
 
-              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
-                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
-                  02
+              <div className="flex flex-col gap-[1rem] w-full md:w-[70%]">
+                <div className="flex justify-center items-center ">
+                  <div className="bg-orange-500 h-[4rem] w-[6rem]   m-[1rem]  rounded-md flex items-center justify-center">
+                    <ShoppingCart size={30} className="text-white " />
+                  </div>
+
+                  <div>
+                    <p className="text-[1.5rem]">E-commerce Solutions</p>
+                    <p>
+                      Custom e-commerce platforms tailored for maximum
+                      conversions and scalability. Built with Next.js,
+                      integrated with secure payments, and optimized for mobile.
+                    </p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Custom store design</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Payment gateway setup</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Product catalog & inventory</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Mobile-first experience</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Analytics & reporting</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>UI/UX design & prototyping</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Workflow automation included</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Store launch support</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-[1rem] md:justify-center w-full md:w-[30%]">
+                <p className="text-[1.5rem] md:text-[2rem] font-semibold">
+                  Custom Quote
                 </p>
-                <p className="font-semibold text-[1.3rem]">Design</p>
-                <p className="text-[1rem]">
-                  Create a modern, responsive design with SEO in mind.
-                </p>
+                <ScheduleButton
+                  className="cursor-pointer group bg-orange-500 text-white border border-orange-600 p-3 rounded-md w-[14rem] text-center font-medium md:text-[1.1em] md:w-[18rem] 
+              transition-colors duration-300
+              hover:bg-white hover:text-orange-500 hover:border-orange-500"
+                  withArrow={false} // disable default arrow
+                >
+                  Schedule a Consultation
+                  <ArrowRight
+                    className="inline-block ml-5 text-white transition-colors duration-300 group-hover:text-orange-500"
+                    size={16}
+                  />
+                </ScheduleButton>
+                <p>Free Consultation included*</p>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+
+            <div className="hover:border-violet-300 transition-all duration-300 ease-in-out border border-gray-300 rounded-xl h-[auto] w-[90%] relative bg-white shadow-md flex flex-col md:flex-row p-[1rem] gap-[1rem]">
+              <div
+                className="absolute -top-4 left-1/2 -translate-x-1/2 
+                 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600
+                 text-white text-xs md:text-sm font-semibold 
+                 px-5 py-1.5 rounded-full shadow-lg tracking-wide"
+              >
+                Enterprise
               </div>
 
-              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
-                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
-                  03
-                </p>
-                <p className="font-semibold text-[1.3rem]">Develop & Deploy</p>
-                <p className="text-[1rem]">
-                  Build a fast, secure site with on-page SEO optimization.
-                </p>
-              </div>
+              <div className="flex flex-col gap-[1rem] w-full md:w-[70%]">
+                <div className="flex justify-center items-center ">
+                  <div className="bg-violet-500 h-[4rem] w-[6rem]   m-[1rem]  rounded-md flex items-center justify-center">
+                    <Globe size={30} className="text-white" />
+                  </div>
 
-              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
-                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
-                  04
+                  <div>
+                    <p className="text-[1.5rem]">Corporate Websites</p>
+                    <p>
+                      Professional Next.js websites with enterprise-grade
+                      performance and scalability. Perfect for corporate brands,
+                      agencies, and service businesses.
+                    </p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Next.js development</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Enterprise performance</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Content management (CMS)</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Multi-language support</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Advanced SEO</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>UI/UX design & prototyping</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Workflow automation included</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CircleCheckBig className="text-green-600" />
+                    <p>Ongoing maintenance</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-[1rem] md:justify-center w-full md:w-[30%]">
+                <p className="text-[1.5rem] md:text-[2rem] font-semibold">
+                  Custom Quote
                 </p>
-                <p className="font-semibold text-[1.3rem]">Optimize</p>
-                <p className="text-[1rem]">
-                  Track performance, refine SEO, and scale results.
-                </p>
+                <ScheduleButton
+                  className="cursor-pointer group bg-violet-500 text-white border border-violet-600 p-3 rounded-md w-[14rem] text-center font-medium md:text-[1.1em] md:w-[18rem] 
+              transition-colors duration-300
+              hover:bg-white hover:text-violet-500 hover:border-violet-500"
+                  withArrow={false} // disable default arrow
+                >
+                  Schedule a Consultation
+                  <ArrowRight
+                    className="inline-block ml-5 text-white transition-colors duration-300 group-hover:text-violet-500"
+                    size={16}
+                  />
+                </ScheduleButton>
+                <p>Free Consultation included*</p>
               </div>
             </div>
           </div>

@@ -20,6 +20,7 @@ import {
   Code,
   CircleCheckBig,
   ShoppingCart,
+  ArrowDown,
 } from "lucide-react";
 import { ScheduleButton } from "@/components/ScheduleButton";
 import { LoadingProgress } from "@/components/LoadingProgress";
@@ -215,7 +216,7 @@ export default function WebServicesPage() {
           </div>
         </section>
 
-        {/* Section for Benefits and what we offer  */}
+        {/* Section for Benefits and what we offer and Implementation Steps */}
         <section className="flex flex-col gap-5 items-center mt-[4rem]">
           <div className="w-[18rem] text-center md:w-[50rem]">
             <h2 className="text-[2rem] md:text-[2.5rem]">
@@ -621,6 +622,105 @@ export default function WebServicesPage() {
                   />
                 </ScheduleButton>
                 <p>Free Consultation included*</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Transition Section */}
+          <div className="mt-[6rem]  w-[90%] text-center flex flex-col items-center gap-6">
+            <h3 className="text-[2rem] md:text-[2.5rem] ">
+              Our <span className="text-green-600">Development Process</span>
+            </h3>
+            <p className="text-[1rem] md:text-[1.3rem] max-w-[60rem] leading-relaxed">
+              Behind every successful website we build—whether it’s a startup
+              Business page, a full-scale e-commerce platform, or a corporate
+              solution—there’s a proven process. We combine{" "}
+              <span className=" text-green-600 font-semibold">
+                strategy, design, SEO
+              </span>
+              , and{" "}
+              <span className="text-green-600 font-semibold">
+                workflow automation
+              </span>{" "}
+              to deliver digital experiences that perform, scale, and grow with
+              your business.
+            </p>
+            <p className="text-[1rem] md:text-[1.1rem] max-w-[50rem] ">
+              Here’s how we take your vision from concept to launch in four
+              streamlined steps:
+            </p>
+
+            {/* Arrow Down */}
+            <ArrowDown
+              size={40}
+              className="text-green-600 mt-[5rem] animate-bounce "
+            />
+          </div>
+
+          <div
+            className="border border-gray-300 rounded-xl 
+   hover:border-green-300 hover:scale-[1.01] 
+   transition-all duration-300 ease-in-out 
+   shadow-lg w-[90%] h-[auto] p-[2rem] mt-[10rem] flex flex-col  gap-10 items-center"
+          >
+            <div className="text-center mb-[2rem]">
+              <h5 className="text-[2rem] md:text-[2.5rem] mb-3">
+                Streamlined{" "}
+                <span className="text-green-600">Web Development</span>
+              </h5>
+              <p className="text-[1rem] md:text-[1.2rem]">
+                From discovery to launch, we craft high-performance websites
+                with built-in SEO and workflow automation for scalable growth.
+              </p>
+            </div>
+
+            <div className="flex flex-col flex-wrap md:flex-row justify-center gap-[5rem] mb-[2rem]">
+              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+                  01
+                </p>
+                <p className="font-semibold text-[1.3rem]">
+                  Discover & Research
+                </p>
+                <p className="text-[1rem]">
+                  Define goals, study your audience, and analyze competitors to
+                  set a solid foundation.
+                </p>
+              </div>
+
+              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+                  02
+                </p>
+                <p className="font-semibold text-[1.3rem]">Plan & Design</p>
+                <p className="text-[1rem]">
+                  Create user-focused designs, prototypes, and SEO-friendly
+                  layouts tailored for performance.
+                </p>
+              </div>
+
+              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+                  03
+                </p>
+                <p className="font-semibold text-[1.3rem]">
+                  Develop & Automate
+                </p>
+                <p className="text-[1rem]">
+                  Build fast, secure websites with Next.js, workflow automation,
+                  API integrations, and SEO optimization.
+                </p>
+              </div>
+
+              <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+                <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+                  04
+                </p>
+                <p className="font-semibold text-[1.3rem]">Launch & Grow</p>
+                <p className="text-[1rem]">
+                  Deploy with confidence, track performance, monitor SEO, and
+                  refine for long-term growth.
+                </p>
               </div>
             </div>
           </div>

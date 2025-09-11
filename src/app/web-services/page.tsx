@@ -317,8 +317,8 @@ export default function WebServicesPage() {
               </div>
 
               <div className="flex flex-col gap-[1rem] w-full md:w-[70%]">
-                <div className="flex justify-center items-center ">
-                  <div className="bg-green-500 h-[4rem] w-[10rem] md:w-[5rem] m-[1rem]  rounded-md flex items-center justify-center">
+                <div className="flex items-center ">
+                  <div className="bg-green-500 min-w-[5rem]  h-[5rem] m-[1rem] rounded-md flex items-center justify-center">
                     <Code size={30} className="text-white " />
                   </div>
 
@@ -333,35 +333,59 @@ export default function WebServicesPage() {
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-green-500 shrink-0"
+                    />
                     <p>Custom Next.js websites</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-green-500 shrink-0"
+                    />
                     <p>GSAP animations</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-green-500 shrink-0"
+                    />
                     <p>Responsive design systems</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-green-500 shrink-0"
+                    />
                     <p>API & third-party integrations</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-green-500 shrink-0"
+                    />
                     <p>SEO & performance optimization</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-green-500 shrink-0"
+                    />
                     <p>UI/UX design & prototyping</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-green-500 shrink-0"
+                    />
                     <p>Workflow automation included</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-green-500 shrink-0"
+                    />
                     <p>1yr support included</p>
                   </div>
                 </div>
@@ -400,8 +424,8 @@ export default function WebServicesPage() {
               </div>
 
               <div className="flex flex-col gap-[1rem] w-full md:w-[70%]">
-                <div className="flex  justify-center items-center ">
-                  <div className="bg-orange-500 h-[4rem] w-[12rem] md:w-[6rem]   m-[1rem]  rounded-md flex items-center justify-center">
+                <div className="flex  items-center ">
+                  <div className="bg-orange-500 min-w-[5rem]  h-[5rem] m-[1rem]  rounded-md flex items-center justify-center">
                     <ShoppingCart size={30} className="text-white " />
                   </div>
 
@@ -416,35 +440,59 @@ export default function WebServicesPage() {
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-orange-500 shrink-0"
+                    />
                     <p>Custom store design</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-orange-500 shrink-0"
+                    />
                     <p>Payment gateway setup</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-orange-500 shrink-0"
+                    />
                     <p>Product catalog & inventory</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-orange-500 shrink-0"
+                    />
                     <p>Mobile-first experience</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-orange-500 shrink-0"
+                    />
                     <p>Analytics & reporting</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-orange-500 shrink-0"
+                    />
                     <p>UI/UX design & prototyping</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-orange-500 shrink-0"
+                    />
                     <p>Workflow automation included</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-orange-500 shrink-0"
+                    />
                     <p>Store launch support</p>
                   </div>
                 </div>
@@ -482,8 +530,8 @@ export default function WebServicesPage() {
               </div>
 
               <div className="flex flex-col gap-[1rem] w-full md:w-[70%]">
-                <div className="flex justify-center items-center ">
-                  <div className="bg-violet-500 h-[4rem] w-[12rem] md:w-[6rem] m-[1rem]  rounded-md flex items-center justify-center">
+                <div className="flex  items-center ">
+                  <div className="bg-violet-500 min-w-[5rem]  h-[5rem] m-[1rem]  rounded-md flex items-center justify-center">
                     <Globe size={30} className="text-white" />
                   </div>
 
@@ -498,39 +546,64 @@ export default function WebServicesPage() {
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-violet-500 shrink-0"
+                    />
                     <p>Next.js development</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-violet-500 shrink-0"
+                    />
                     <p>Enterprise performance</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-violet-500 shrink-0"
+                    />
                     <p>Content management (CMS)</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-violet-500 shrink-0"
+                    />
                     <p>Multi-language support</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-violet-500 shrink-0"
+                    />
                     <p>Advanced SEO</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-violet-500 shrink-0"
+                    />
                     <p>UI/UX design & prototyping</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-violet-500 shrink-0"
+                    />
                     <p>Workflow automation included</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CircleCheckBig className="text-green-600" />
+                    <CircleCheckBig
+                      size={30}
+                      className="text-violet-500 shrink-0"
+                    />
                     <p>Ongoing maintenance</p>
                   </div>
                 </div>
               </div>
+
               <div className="flex flex-col items-center gap-[1rem] md:justify-center w-full md:w-[30%]">
                 <p className="text-[1.5rem] md:text-[2rem] font-semibold">
                   Custom Quote

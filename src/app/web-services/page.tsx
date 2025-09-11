@@ -306,19 +306,19 @@ export default function WebServicesPage() {
           {/* Service Offerings */}
           <div className="mt-[3rem] w-full flex flex-col gap-[5rem] justify-center items-center">
             {/* Card 1 */}
-            <div className="hover:border-green-300 transition-all duration-300 ease-in-out border border-gray-300 rounded-xl h-[auto] w-[90%] relative bg-white shadow-md flex flex-col md:flex-row p-[1rem] gap-[1rem] ">
+            <div className="hover:border-green-300 hover:scale-[1.01] transition-all duration-300 ease-in-out border border-gray-300 rounded-xl h-[auto] w-[90%] relative bg-white shadow-md flex flex-col md:flex-row p-[1rem] gap-[1rem] ">
               <div
-                className="absolute -top-4 left-1/2 -translate-x-1/2 
+                className="absolute -top-6 left-1/2 -translate-x-1/2 
                  bg-gradient-to-r from-green-500 via-lime-500 to-emerald-600
-                 text-white text-xs md:text-sm font-semibold 
-                 px-5 py-1.5 rounded-full shadow-lg tracking-wide"
+                 text-white text-xs md:text-lg font-semibold 
+                 px-10 py-3 rounded-full shadow-lg tracking-wide"
               >
                 Most Popular
               </div>
 
               <div className="flex flex-col gap-[1rem] w-full md:w-[70%]">
                 <div className="flex justify-center items-center ">
-                  <div className="bg-green-500 h-[4rem] w-[5rem] m-[1rem]  rounded-md flex items-center justify-center">
+                  <div className="bg-green-500 h-[4rem] w-[10rem] md:w-[5rem] m-[1rem]  rounded-md flex items-center justify-center">
                     <Code size={30} className="text-white " />
                   </div>
 
@@ -366,6 +366,7 @@ export default function WebServicesPage() {
                   </div>
                 </div>
               </div>
+
               <div className="flex flex-col items-center gap-[1rem] md:justify-center w-full md:w-[30%]">
                 <p className="text-[1.5rem] md:text-[2rem] font-semibold">
                   Custom Quote
@@ -388,19 +389,19 @@ export default function WebServicesPage() {
 
             {/* Card 2 */}
 
-            <div className="hover:border-orange-300 transition-all duration-300 ease-in-out border border-gray-300 rounded-xl h-[auto] w-[90%] relative bg-white shadow-md flex flex-col md:flex-row p-[1rem] gap-[1rem]">
+            <div className="hover:border-orange-300 hover:scale-[1.01] transition-all duration-300 ease-in-out border border-gray-300 rounded-xl h-[auto] w-[90%] relative bg-white shadow-md flex flex-col md:flex-row p-[1rem] gap-[1rem]">
               <div
-                className="absolute -top-4 left-1/2 -translate-x-1/2 
+                className="absolute -top-6  left-1/2 -translate-x-1/2 
                  bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500
-                 text-white text-xs md:text-sm font-semibold 
-                 px-5 py-1.5 rounded-full shadow-lg tracking-wide"
+                 text-white text-xs md:text-lg font-semibold 
+                px-10 py-3 rounded-full shadow-lg tracking-wide"
               >
                 Best Value
               </div>
 
               <div className="flex flex-col gap-[1rem] w-full md:w-[70%]">
-                <div className="flex justify-center items-center ">
-                  <div className="bg-orange-500 h-[4rem] w-[6rem]   m-[1rem]  rounded-md flex items-center justify-center">
+                <div className="flex  justify-center items-center ">
+                  <div className="bg-orange-500 h-[4rem] w-[12rem] md:w-[6rem]   m-[1rem]  rounded-md flex items-center justify-center">
                     <ShoppingCart size={30} className="text-white " />
                   </div>
 
@@ -470,19 +471,19 @@ export default function WebServicesPage() {
 
             {/* Card 3 */}
 
-            <div className="hover:border-violet-300 transition-all duration-300 ease-in-out border border-gray-300 rounded-xl h-[auto] w-[90%] relative bg-white shadow-md flex flex-col md:flex-row p-[1rem] gap-[1rem]">
+            <div className="hover:border-violet-300 hover:scale-[1.01] transition-all duration-300 ease-in-out border border-gray-300 rounded-xl h-[auto] w-[90%] relative bg-white shadow-md flex flex-col md:flex-row p-[1rem] gap-[1rem]">
               <div
-                className="absolute -top-4 left-1/2 -translate-x-1/2 
+                className="absolute -top-6 left-1/2 -translate-x-1/2 
                  bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600
-                 text-white text-xs md:text-sm font-semibold 
-                 px-5 py-1.5 rounded-full shadow-lg tracking-wide"
+                 text-white text-xs md:text-lg font-semibold 
+                 px-10 py-3 rounded-full shadow-lg tracking-wide"
               >
                 Enterprise
               </div>
 
               <div className="flex flex-col gap-[1rem] w-full md:w-[70%]">
                 <div className="flex justify-center items-center ">
-                  <div className="bg-violet-500 h-[4rem] w-[6rem]   m-[1rem]  rounded-md flex items-center justify-center">
+                  <div className="bg-violet-500 h-[4rem] w-[12rem] md:w-[6rem] m-[1rem]  rounded-md flex items-center justify-center">
                     <Globe size={30} className="text-white" />
                   </div>
 

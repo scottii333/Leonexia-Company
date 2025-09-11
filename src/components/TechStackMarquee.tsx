@@ -21,7 +21,7 @@ export const TechStackMarquee: React.FC = () => {
 
     tweenRef.current = gsap.to(track, {
       x: -trackWidth,
-      duration: 200,
+      duration: 500,
       repeat: -1,
       ease: "linear",
       modifiers: {

@@ -21,12 +21,14 @@ import {
   CircleCheckBig,
   ShoppingCart,
   ArrowDown,
+  Eye,
 } from "lucide-react";
 import { ScheduleButton } from "@/components/ScheduleButton";
 import { LoadingProgress } from "@/components/LoadingProgress";
 import { HomeGsap } from "@/components/HomeGsap";
 import Link from "next/link";
 import { TechStackMarquee } from "@/components/TechStackMarquee";
+import Image from "next/image";
 
 export default function WebServicesPage() {
   return (
@@ -752,6 +754,42 @@ export default function WebServicesPage() {
           </div>
           <TechStackMarquee />
         </div>
+
+        <section className="w-full mt-[5rem] mb-[10rem] flex flex-col gap-10 justify-center items-center p-[2rem]">
+          <div className="flex flex-col gap-5 items-center text-center">
+            <p className="font-semibold text-green-600 text-[1.5rem] md:text-[2.5rem]">
+              Case Study
+            </p>
+            <p className="text-center text-[1rem] md:text-[1.6rem] max-w-[60rem] leading-relaxed ">
+              A showcase of our latest projects and the results we&apos;ve
+              achieved for our clients
+            </p>
+          </div>
+
+          <div className="shadow-lg w-full h-[100vh] p-[1rem] flex justify-center ">
+            <div className="w-[20rem] h-[23rem]">
+              {/* Image Container */}
+              <div className="relative w-full h-[10rem] group cursor-pointer overflow-hidden rounded-lg border-gray-300 border">
+                {/* Image with Zoom Inside */}
+                <Image
+                  src="/techStack/splnd-d.svg"
+                  alt="Case Study Image"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110 group-hover:opacity-60 "
+                />
+
+                {/* Overlay with gray background + Eye Icon */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Eye size={40} className="text-white drop-shadow-lg" />
+                </div>
+              </div>
+              {/* Text Content */}
+              <p className="font-semibold text-[1.3rem] mt-2">SPLND-D</p>
+              <p>E-Commerce Website</p>
+              <p className="text-green-700 text-[1.2rem]">Premium Clothing</p>
+            </div>
+          </div>
+        </section>
       </HomeGsap>
     </main>
   );

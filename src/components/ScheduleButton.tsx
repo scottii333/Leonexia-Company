@@ -20,26 +20,22 @@ export const ScheduleButton = ({
   useEffect(() => {
     (async () => {
       const cal = await getCalApi({ namespace: NAMESPACE });
-
       const brand = { "cal-brand": "#16a34a" } as const;
 
       cal("ui", {
         theme: "light",
-        cssVarsPerTheme: {
-          light: brand,
-          dark: brand,
-        },
+        cssVarsPerTheme: { light: brand, dark: brand },
       });
 
-      cal("preload", { calLink: "leonexia/30min" });
+      cal("preload", { calLink: "/leonexia/business-growth" });
       setReady(true);
-    })().catch((e) => console.error(e));
+    })().catch(console.error);
   }, []);
 
   const openCal = useCallback(async () => {
     if (!ready) return;
     const cal = await getCalApi({ namespace: NAMESPACE });
-    cal("modal", { calLink: "leonexia/30min" });
+    cal("modal", { calLink: "/leonexia/business-growth" });
   }, [ready]);
 
   return (
@@ -47,7 +43,7 @@ export const ScheduleButton = ({
       type="button"
       onClick={openCal}
       disabled={!ready}
-      className={className} // no defaults, purely consumer-controlled
+      className={className}
       aria-label="Schedule a consultation via Cal.com"
     >
       {children}

@@ -26,6 +26,7 @@ import { ScheduleButton } from "@/components/ScheduleButton";
 import { LoadingProgress } from "@/components/LoadingProgress";
 import { HomeGsap } from "@/components/HomeGsap";
 import Link from "next/link";
+import { TechStackMarquee } from "@/components/TechStackMarquee";
 
 export default function WebServicesPage() {
   return (
@@ -725,6 +726,32 @@ export default function WebServicesPage() {
             </div>
           </div>
         </section>
+
+        <div className="w-full mt-[5rem] flex flex-col gap-[5rem] justify-center items-center ">
+          <div className="w-[90%] text-center flex flex-col items-center gap-6">
+            <p className="text-[2rem] md:text-[2.5rem] font-semibold">
+              Built With{" "}
+              <span className="text-green-600">Trusted Technologies</span>
+            </p>
+            <p className="text-[1rem] md:text-[1.3rem] max-w-[60rem] leading-relaxed text-gray-700">
+              Every project we deliver follows{" "}
+              <span className="font-semibold text-green-600">
+                SEO best practices
+              </span>
+              ,{" "}
+              <span className="font-semibold text-green-600">
+                structured data (schema.org)
+              </span>
+              , and full integration with{" "}
+              <span className="font-semibold text-green-600">
+                Google Analytics & Search Console
+              </span>
+              —ensuring your website is visible, measurable, and ready to grow
+              from day one.
+            </p>
+          </div>
+          <TechStackMarquee />
+        </div>
       </HomeGsap>
     </main>
   );

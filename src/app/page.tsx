@@ -277,9 +277,9 @@ export default function Page() {
                 <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
                   01
                 </p>
-                <p className="font-semibold text-[1.3rem]">Assess</p>
+                <p className="font-semibold text-[1.3rem]">Audit & Research</p>
                 <p className="text-[1rem]">
-                  Audit your site and identify SEO opportunities.
+                  Analyze site health, competitors, and keyword opportunities
                 </p>
               </div>
 
@@ -287,9 +287,9 @@ export default function Page() {
                 <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
                   02
                 </p>
-                <p className="font-semibold text-[1.3rem]">Design</p>
+                <p className="font-semibold text-[1.3rem]">Plan & Design</p>
                 <p className="text-[1rem]">
-                  Create a modern, responsive design with SEO in mind.
+                  Map content strategy, UX, and SEO-friendly design
                 </p>
               </div>
 
@@ -297,9 +297,11 @@ export default function Page() {
                 <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
                   03
                 </p>
-                <p className="font-semibold text-[1.3rem]">Develop & Deploy</p>
+                <p className="font-semibold text-[1.3rem]">
+                  Develop & Optimize
+                </p>
                 <p className="text-[1rem]">
-                  Build a fast, secure site with on-page SEO optimization.
+                  Build a fast, secure, and optimized website
                 </p>
               </div>
 
@@ -307,9 +309,9 @@ export default function Page() {
                 <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
                   04
                 </p>
-                <p className="font-semibold text-[1.3rem]">Optimize</p>
+                <p className="font-semibold text-[1.3rem]">Monitor & Improve</p>
                 <p className="text-[1rem]">
-                  Track performance, refine SEO, and scale results.
+                  Track rankings, refine SEO, and grow long-term
                 </p>
               </div>
             </div>

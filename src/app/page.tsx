@@ -13,10 +13,14 @@ import {
   HeartHandshake,
   SearchCheck,
   GlobeLock,
+  Eye,
 } from "lucide-react";
 import { LoadingProgress } from "@/components/LoadingProgress";
 import { HomeGsap } from "@/components/HomeGsap";
 import { ScheduleButton } from "@/components/ScheduleButton";
+import Link from "next/link";
+import Image from "next/image";
+import { TechStackMarquee } from "@/components/TechStackMarquee";
 
 export default function Page() {
   return (
@@ -446,6 +450,136 @@ export default function Page() {
               <ArrowRight size={40} className="text-green-600" />
             </ScheduleButton>
           </div>
+        </section>
+
+        <div className="w-full mt-[5rem] flex flex-col gap-[5rem] justify-center items-center ">
+          <div className="w-[90%] text-center flex flex-col items-center gap-6">
+            <p className="text-[2rem] md:text-[2.5rem] font-semibold">
+              Built With{" "}
+              <span className="text-green-600">Trusted Technologies</span>
+            </p>
+            <p className="text-[1rem] md:text-[1.3rem] max-w-[60rem] leading-relaxed text-gray-700">
+              Every project we deliver follows{" "}
+              <span className="font-semibold text-green-600">
+                SEO best practices
+              </span>
+              ,{" "}
+              <span className="font-semibold text-green-600">
+                structured data (schema.org)
+              </span>
+              , and full integration with{" "}
+              <span className="font-semibold text-green-600">
+                Google Analytics & Search Console
+              </span>
+              —ensuring your website is visible, measurable, and ready to grow
+              from day one.
+            </p>
+          </div>
+          <TechStackMarquee />
+        </div>
+
+        {/* Section for Case Studies */}
+
+        <section className="w-full mt-[5rem] mb-[10rem] flex flex-col gap-10 justify-center items-center p-[2rem]">
+          <div className="flex flex-col gap-5 items-center text-center">
+            <p className="font-semibold text-green-600 text-[1.5rem] md:text-[2.5rem]">
+              Case Study
+            </p>
+            <p className="text-center text-[1rem] md:text-[1.6rem] max-w-[60rem] leading-relaxed ">
+              A showcase of our latest projects and the results we&apos;ve
+              achieved for our clients
+            </p>
+          </div>
+
+          <div className="w-full min-auto-screen p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+            {/* Case Study 1 Card */}
+            <div className="w-full max-w-[28rem] h-[23rem]">
+              {/* Image Container */}
+              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                {/* Image with Zoom Inside */}
+                <Image
+                  src="/techStack/splnd-d.jpeg"
+                  alt="Case Study Image"
+                  fill
+                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                />
+
+                {/* Overlay with gray background + Eye Icon */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Eye size={40} className="text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <p className="font-bold text-[1.3rem] mt-2">SPLND-D</p>
+              <p>E-Commerce Website</p>
+              <p className="text-green-700 font-semibold text-[1.2rem]">
+                Premium Clothing
+              </p>
+            </div>
+
+            {/* Case Study 2 Card */}
+            <div className="w-full max-w-[28rem] h-[23rem]">
+              {/* Image Container */}
+              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                {/* Image with Zoom Inside */}
+                <Image
+                  src="/techStack/coffee.jpeg"
+                  alt="Case Study Image"
+                  fill
+                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                />
+
+                {/* Overlay with gray background + Eye Icon */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Eye size={40} className="text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <p className="font-bold text-[1.3rem] mt-2">DaCopi</p>
+              <p>Coffee Shops Website</p>
+              <p className="text-green-700 font-semibold text-[1.2rem]">
+                Premium Coffee
+              </p>
+            </div>
+
+            {/* Case Study 3 Card */}
+            <div className="w-full max-w-[28rem] h-[23rem]">
+              {/* Image Container */}
+              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                {/* Image with Zoom Inside */}
+                <Image
+                  src="/techStack/splnd-d.jpeg"
+                  alt="Case Study Image"
+                  fill
+                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                />
+
+                {/* Overlay with gray background + Eye Icon */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Eye size={40} className="text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <p className="font-bold text-[1.3rem] mt-2">SPLND-D</p>
+              <p>E-Commerce Website</p>
+              <p className="text-green-700 font-semibold text-[1.2rem]">
+                Premium Clothing
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/case-studies"
+            className="group inline-flex items-center justify-center gap-2 bg-green-600 text-white border border-green-800 p-3 rounded-md w-[14rem] text-center font-medium md:text-[1.5rem] md:w-[20rem] transition-colors duration-300 hover:bg-white hover:text-green-600"
+          >
+            View all Our Works
+            <ArrowRight
+              size={18}
+              className="ml-3 text-white animate-bounce group-hover:text-green-600"
+            />
+          </Link>
         </section>
       </HomeGsap>
     </main>

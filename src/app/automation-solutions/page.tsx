@@ -15,9 +15,12 @@ import {
   BarChart3,
   ClipboardList,
   MonitorCheck,
+  ArrowRight,
+  Eye,
 } from "lucide-react";
 import { ScheduleButton } from "@/components/ScheduleButton";
 import { TechStackMarquee } from "@/components/TechStackMarquee";
+import Image from "next/image";
 
 export default function AutomationSolutionsPage() {
   return (
@@ -59,30 +62,30 @@ export default function AutomationSolutionsPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[2rem] justify-items-center">
           {[
             {
-              icon: <ClipboardList size={40} className="text-green-600" />,
+              icon: <ClipboardList size={48} className="text-green-600" />,
               title: "Save Time",
               desc: "Eliminate repetitive tasks so your team can focus on growth and strategy.",
             },
             {
-              icon: <MonitorCheck size={40} className="text-orange-600" />,
+              icon: <MonitorCheck size={48} className="text-orange-600" />,
               title: "Reduce Errors",
               desc: "Automation ensures accuracy and consistency across your business processes.",
             },
             {
-              icon: <BarChart3 size={40} className="text-blue-600" />,
+              icon: <BarChart3 size={48} className="text-blue-600" />,
               title: "Scale Effortlessly",
               desc: "Easily handle more customers and workflows without hiring extra staff.",
             },
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-white shadow-lg rounded-xl p-[2rem] flex flex-col items-center text-center w-[18rem] md:w-[20rem] border border-transparent hover:border-green-500 hover:scale-[1.02] transition"
+              className="bg-white shadow-lg rounded-xl p-[2.5rem] flex flex-col items-center text-center w-[20rem] md:w-[22rem] border border-transparent hover:border-green-500 hover:scale-[1.03] transition"
             >
               {item.icon}
-              <p className="mt-[1rem] font-semibold text-[1.3rem]">
+              <p className="mt-[1rem] font-semibold text-[1.4rem]">
                 {item.title}
               </p>
-              <p className="mt-[0.5rem] text-gray-600 text-[1rem] leading-relaxed">
+              <p className="mt-[0.5rem] text-gray-600 text-[1.05rem] leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -98,45 +101,40 @@ export default function AutomationSolutionsPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2rem] justify-items-center">
           {[
             {
-              icon: <Calendar size={40} className="text-green-600" />,
+              icon: <Calendar size={48} className="text-green-600" />,
               title: "Scheduling Automation",
               desc: "Set up booking flows with tools like Cal.com to avoid back-and-forth emails.",
             },
             {
-              icon: <Workflow size={40} className="text-orange-600" />,
+              icon: <Workflow size={48} className="text-orange-600" />,
               title: "Workflow Automation",
               desc: "Automate repetitive tasks with n8n or Zapier — connect apps and streamline work.",
             },
             {
-              icon: <Mail size={40} className="text-blue-600" />,
+              icon: <Mail size={48} className="text-blue-600" />,
               title: "Email Automation",
               desc: "Send campaigns, reminders, and follow-ups automatically to engage customers.",
             },
             {
-              icon: <Settings2 size={40} className="text-purple-600" />,
+              icon: <Settings2 size={48} className="text-purple-600" />,
               title: "Custom Integrations",
               desc: "From CRMs to payments, we build automations tailored to your tools.",
             },
             {
-              icon: <BarChart3 size={40} className="text-pink-600" />,
-              title: "Analytics & Reporting",
-              desc: "Get automated reports and dashboards for faster, smarter decisions.",
-            },
-            {
-              icon: <BarChart3 size={40} className="text-pink-600" />,
+              icon: <BarChart3 size={48} className="text-pink-600" />,
               title: "Analytics & Reporting",
               desc: "Get automated reports and dashboards for faster, smarter decisions.",
             },
           ].map((service, idx) => (
             <div
               key={idx}
-              className="bg-white shadow-lg rounded-xl p-[2rem] flex flex-col items-center text-center w-[18rem] md:w-[20rem] border border-transparent hover:border-green-500 hover:scale-[1.02] transition"
+              className="bg-white shadow-lg rounded-xl p-[2.5rem] flex flex-col items-center text-center w-[20rem] md:w-[22rem] border border-transparent hover:border-green-500 hover:scale-[1.03] transition"
             >
               {service.icon}
-              <p className="mt-[1rem] font-semibold text-[1.3rem]">
+              <p className="mt-[1rem] font-semibold text-[1.4rem]">
                 {service.title}
               </p>
-              <p className="mt-[0.5rem] text-gray-600 text-[1rem] leading-relaxed">
+              <p className="mt-[0.5rem] text-gray-600 text-[1.05rem] leading-relaxed">
                 {service.desc}
               </p>
             </div>
@@ -144,47 +142,69 @@ export default function AutomationSolutionsPage() {
         </div>
       </section>
 
-      {/* ✅ Process */}
-      <section className="mt-[6rem] px-[2rem] md:px-[6rem] text-center flex flex-col items-center gap-[3rem]">
-        <h2 className="text-[2rem] md:text-[2.5rem] font-semibold mb-[3rem]">
-          How <span className="text-green-600">It Works</span>
-        </h2>
-        <div className="flex flex-col md:flex-row justify-center gap-[3rem]">
-          {[
-            {
-              step: "01",
-              title: "Audit",
-              desc: "We review your current processes and find automation opportunities.",
-            },
-            {
-              step: "02",
-              title: "Plan",
-              desc: "We design workflows and select the right tools for your business.",
-            },
-            {
-              step: "03",
-              title: "Automate",
-              desc: "We implement automation using platforms like n8n, Zapier, and Cal.com.",
-            },
-            {
-              step: "04",
-              title: "Monitor",
-              desc: "We test, optimize, and provide ongoing support for improvements.",
-            },
-          ].map((s, idx) => (
-            <div
-              key={idx}
-              className="w-[15rem] flex flex-col items-center text-center gap-[1rem]"
-            >
-              <p className="bg-green-600 w-[4rem] h-[4rem] rounded-full flex items-center justify-center text-white font-semibold text-[1.5rem]">
-                {s.step}
-              </p>
-              <p className="font-semibold text-[1.2rem]">{s.title}</p>
-              <p className="text-gray-600 text-[1rem]">{s.desc}</p>
-            </div>
-          ))}
+      {/* ✅ Step-by-step Process (using provided UI) */}
+      <div
+        className="border border-gray-300 rounded-xl 
+          hover:border-green-300 hover:scale-[1.01] 
+          transition-all duration-300 ease-in-out 
+          shadow-lg w-[90%] h-[auto] p-[2rem] mt-[10rem] flex flex-col gap-10 items-center mx-auto"
+      >
+        <div className="text-center mb-[2rem]">
+          <h5 className="text-[2rem] md:text-[2.5rem] mb-3">
+            Streamlined{" "}
+            <span className="text-green-600">Automation Process</span>
+          </h5>
+          <p className="text-[1rem] md:text-[1.2rem]">
+            From discovery to optimization, we design automation workflows that
+            save time, reduce errors, and scale with your business.
+          </p>
         </div>
-      </section>
+
+        <div className="flex flex-col flex-wrap md:flex-row justify-center gap-[5rem] mb-[2rem]">
+          <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+            <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+              01
+            </p>
+            <p className="font-semibold text-[1.3rem]">Discover & Research</p>
+            <p className="text-[1rem]">
+              Define goals, study workflows, and identify automation
+              opportunities.
+            </p>
+          </div>
+
+          <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+            <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+              02
+            </p>
+            <p className="font-semibold text-[1.3rem]">Plan & Design</p>
+            <p className="text-[1rem]">
+              Create workflow diagrams and select tools like Cal.com, Zapier, or
+              n8n.
+            </p>
+          </div>
+
+          <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+            <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+              03
+            </p>
+            <p className="font-semibold text-[1.3rem]">Develop & Automate</p>
+            <p className="text-[1rem]">
+              Implement automation pipelines and integrate with your business
+              systems.
+            </p>
+          </div>
+
+          <div className="w-[15rem] flex flex-col items-center text-center gap-1">
+            <p className="bg-green-700 w-20 h-20 rounded-full flex items-center justify-center text-white font-semibold text-[2rem]">
+              04
+            </p>
+            <p className="font-semibold text-[1.3rem]">Launch & Grow</p>
+            <p className="text-[1rem]">
+              Deploy, test, and refine automation with continuous monitoring.
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* ✅ Tools We Use */}
       <div className="w-full mt-[6rem] flex flex-col gap-[3rem] justify-center items-center">
@@ -194,45 +214,108 @@ export default function AutomationSolutionsPage() {
         <TechStackMarquee />
       </div>
 
-      {/* ✅ Case Study */}
-      <section className="w-full mt-[6rem] flex flex-col gap-[2rem] items-center text-center px-[2rem] md:px-[6rem]">
-        <h2 className="text-[2rem] font-semibold text-green-600">Case Study</h2>
-        <p className="max-w-[45rem] text-[1.1rem] text-gray-700 leading-relaxed">
-          One of our clients saved <strong>20+ hours per week</strong> by
-          automating their lead management pipeline. With email workflows,
-          scheduled calls, and instant notifications, their team focused more on
-          closing deals instead of manual tasks.
-        </p>
-      </section>
+      {/* Section for Case Studies */}
 
-      {/* ✅ FAQ */}
-      <section className="mt-[6rem] px-[2rem] md:px-[6rem]">
-        <h2 className="text-[2rem] md:text-[2.5rem] font-semibold text-center mb-[3rem]">
-          Frequently Asked <span className="text-green-600">Questions</span>
-        </h2>
-        <div className="max-w-[50rem] mx-auto flex flex-col gap-[2rem]">
-          {[
-            {
-              q: "How long does it take to set up automation?",
-              a: "Most automation workflows take 1–2 weeks depending on complexity.",
-            },
-            {
-              q: "Do I need technical skills?",
-              a: "No, we handle everything for you. We design, implement, and maintain your workflows.",
-            },
-            {
-              q: "Can you integrate with my existing tools?",
-              a: "Yes, we work with CRMs, marketing platforms, payment gateways, and internal apps.",
-            },
-          ].map((faq, idx) => (
-            <div key={idx}>
-              <p className="font-semibold text-[1.2rem] text-gray-900">
-                {faq.q}
-              </p>
-              <p className="text-gray-600 text-[1rem] mt-[0.5rem]">{faq.a}</p>
-            </div>
-          ))}
+      <section className="w-full mt-[5rem] mb-[10rem] flex flex-col gap-10 justify-center items-center p-[2rem]">
+        <div className="flex flex-col gap-5 items-center text-center">
+          <p className="font-semibold text-green-600 text-[1.5rem] md:text-[2.5rem]">
+            Case Study
+          </p>
+          <p className="text-center text-[1rem] md:text-[1.6rem] max-w-[60rem] leading-relaxed ">
+            A showcase of our latest projects and the results we&apos;ve
+            achieved for our clients
+          </p>
         </div>
+
+        <div className="w-full min-auto-screen p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+          {/* Case Study 1 Card */}
+          <div className="w-full max-w-[28rem] h-[23rem]">
+            {/* Image Container */}
+            <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+              {/* Image with Zoom Inside */}
+              <Image
+                src="/techStack/splnd-d.jpeg"
+                alt="Case Study Image"
+                fill
+                className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+              />
+
+              {/* Overlay with gray background + Eye Icon */}
+              <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <Eye size={40} className="text-white drop-shadow-lg" />
+              </div>
+            </div>
+
+            {/* Text Content */}
+            <p className="font-bold text-[1.3rem] mt-2">SPLND-D</p>
+            <p>E-Commerce Website</p>
+            <p className="text-green-700 font-semibold text-[1.2rem]">
+              Premium Clothing
+            </p>
+          </div>
+
+          {/* Case Study 2 Card */}
+          <div className="w-full max-w-[28rem] h-[23rem]">
+            {/* Image Container */}
+            <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+              {/* Image with Zoom Inside */}
+              <Image
+                src="/techStack/coffee.jpeg"
+                alt="Case Study Image"
+                fill
+                className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+              />
+
+              {/* Overlay with gray background + Eye Icon */}
+              <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <Eye size={40} className="text-white drop-shadow-lg" />
+              </div>
+            </div>
+
+            {/* Text Content */}
+            <p className="font-bold text-[1.3rem] mt-2">DaCopi</p>
+            <p>Coffee Shops Website</p>
+            <p className="text-green-700 font-semibold text-[1.2rem]">
+              Premium Coffee
+            </p>
+          </div>
+
+          {/* Case Study 3 Card */}
+          <div className="w-full max-w-[28rem] h-[23rem]">
+            {/* Image Container */}
+            <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+              {/* Image with Zoom Inside */}
+              <Image
+                src="/techStack/splnd-d.jpeg"
+                alt="Case Study Image"
+                fill
+                className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+              />
+
+              {/* Overlay with gray background + Eye Icon */}
+              <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <Eye size={40} className="text-white drop-shadow-lg" />
+              </div>
+            </div>
+
+            {/* Text Content */}
+            <p className="font-bold text-[1.3rem] mt-2">SPLND-D</p>
+            <p>E-Commerce Website</p>
+            <p className="text-green-700 font-semibold text-[1.2rem]">
+              Premium Clothing
+            </p>
+          </div>
+        </div>
+        <Link
+          href="/case-studies"
+          className="group inline-flex items-center justify-center gap-2 bg-green-600 text-white border border-green-800 p-3 rounded-md w-[14rem] text-center font-medium md:text-[1.5rem] md:w-[20rem] transition-colors duration-300 hover:bg-white hover:text-green-600"
+        >
+          View all Our Works
+          <ArrowRight
+            size={18}
+            className="ml-3 text-white animate-bounce group-hover:text-green-600"
+          />
+        </Link>
       </section>
 
       {/* ✅ Final CTA */}

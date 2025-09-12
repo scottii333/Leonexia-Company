@@ -766,16 +766,17 @@ export default function WebServicesPage() {
             </p>
           </div>
 
-          <div className="shadow-lg w-full h-[100vh] p-[1rem] flex justify-center ">
-            <div className="w-[20rem] h-[23rem]">
+          <div className="w-full min-h-screen p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+            {/* Case Study Card */}
+            <div className="w-full max-w-[28rem] h-[23rem]">
               {/* Image Container */}
-              <div className="relative w-full h-[10rem] group cursor-pointer overflow-hidden rounded-lg border-gray-300 border">
+              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
                 {/* Image with Zoom Inside */}
                 <Image
-                  src="/techStack/splnd-d.svg"
+                  src="/techStack/splnd-d.jpeg"
                   alt="Case Study Image"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110 group-hover:opacity-60 "
+                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
                 />
 
                 {/* Overlay with gray background + Eye Icon */}
@@ -783,12 +784,147 @@ export default function WebServicesPage() {
                   <Eye size={40} className="text-white drop-shadow-lg" />
                 </div>
               </div>
+
               {/* Text Content */}
-              <p className="font-semibold text-[1.3rem] mt-2">SPLND-D</p>
+              <p className="font-bold text-[1.3rem] mt-2">SPLND-D</p>
               <p>E-Commerce Website</p>
-              <p className="text-green-700 text-[1.2rem]">Premium Clothing</p>
+              <p className="text-green-700 font-semibold text-[1.2rem]">
+                Premium Clothing
+              </p>
+            </div>
+
+            <div className="w-full max-w-[28rem] h-[23rem]">
+              {/* Image Container */}
+              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                {/* Image with Zoom Inside */}
+                <Image
+                  src="/techStack/coffee.jpeg"
+                  alt="Case Study Image"
+                  fill
+                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                />
+
+                {/* Overlay with gray background + Eye Icon */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Eye size={40} className="text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <p className="font-bold text-[1.3rem] mt-2">DaCopi</p>
+              <p>Coffee Shops Website</p>
+              <p className="text-green-700 font-semibold text-[1.2rem]">
+                Premium Coffee
+              </p>
+            </div>
+            <div className="w-full max-w-[28rem] h-[23rem]">
+              {/* Image Container */}
+              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                {/* Image with Zoom Inside */}
+                <Image
+                  src="/techStack/splnd-d.jpeg"
+                  alt="Case Study Image"
+                  fill
+                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                />
+
+                {/* Overlay with gray background + Eye Icon */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Eye size={40} className="text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <p className="font-bold text-[1.3rem] mt-2">SPLND-D</p>
+              <p>E-Commerce Website</p>
+              <p className="text-green-700 font-semibold text-[1.2rem]">
+                Premium Clothing
+              </p>
+            </div>
+
+            <div className="w-full max-w-[28rem] h-[23rem]">
+              {/* Image Container */}
+              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                {/* Image with Zoom Inside */}
+                <Image
+                  src="/techStack/coffee.jpeg"
+                  alt="Case Study Image"
+                  fill
+                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                />
+
+                {/* Overlay with gray background + Eye Icon */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Eye size={40} className="text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <p className="font-bold text-[1.3rem] mt-2">DaCopi</p>
+              <p>Coffee Shops Website</p>
+              <p className="text-green-700 font-semibold text-[1.2rem]">
+                Premium Coffee
+              </p>
+            </div>
+            <div className="w-full max-w-[28rem] h-[23rem]">
+              {/* Image Container */}
+              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                {/* Image with Zoom Inside */}
+                <Image
+                  src="/techStack/splnd-d.jpeg"
+                  alt="Case Study Image"
+                  fill
+                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                />
+
+                {/* Overlay with gray background + Eye Icon */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Eye size={40} className="text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <p className="font-bold text-[1.3rem] mt-2">SPLND-D</p>
+              <p>E-Commerce Website</p>
+              <p className="text-green-700 font-semibold text-[1.2rem]">
+                Premium Clothing
+              </p>
+            </div>
+            <div className="w-full max-w-[28rem] h-[23rem]">
+              {/* Image Container */}
+              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                {/* Image with Zoom Inside */}
+                <Image
+                  src="/techStack/coffee.jpeg"
+                  alt="Case Study Image"
+                  fill
+                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                />
+
+                {/* Overlay with gray background + Eye Icon */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <Eye size={40} className="text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <p className="font-bold text-[1.3rem] mt-2">DaCopi</p>
+              <p>Coffee Shops Website</p>
+              <p className="text-green-700 font-semibold text-[1.2rem]">
+                Premium Coffee
+              </p>
             </div>
           </div>
+          <Link
+            href="/case-studies"
+            className="group inline-flex items-center justify-center gap-2 bg-green-600 text-white border border-green-800 p-3 rounded-md w-[14rem] text-center font-medium md:text-[1.5rem] md:w-[20rem] transition-colors duration-300 hover:bg-white hover:text-green-600"
+          >
+            View all Our Works
+            <ArrowRight
+              size={18}
+              className="ml-3 text-white animate-bounce group-hover:text-green-600"
+            />
+          </Link>
         </section>
       </HomeGsap>
     </main>

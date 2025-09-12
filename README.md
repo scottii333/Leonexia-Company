@@ -1,4 +1,4 @@
-Leonexia – Web, AI & Cloud Solutions
+Leonexia – Web, Workflow Automation
 
 Welcome to the official website for Leonexia, a technology company based in the Philippines.
 We help businesses grow by providing modern digital solutions:
@@ -8,8 +8,6 @@ We help businesses grow by providing modern digital solutions:
 🎨 UI/UX Design – clean, responsive, and user-centered interfaces
 
 🤖 Automation Solution – Workflow automation and intelligent systems
-
-☁️ Cloud Solutions – secure and scalable cloud infrastructures
 
 Built with Next.js
 and Tailwind CSS

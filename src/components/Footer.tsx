@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { ScheduleButton } from "./ScheduleButton";
 
 export const Footer = () => {
   return (
@@ -24,8 +23,9 @@ export const Footer = () => {
             </strong>
             , along with{" "}
             <strong className="text-green-600">UI/UX Design</strong>,{" "}
-            <strong className="text-green-600">Automation Solutions</strong>,
-            and <strong className="text-green-600">Cloud Consulting</strong> —
+            <strong className="text-green-600">
+              Workflow Automation Solutions
+            </strong>{" "}
             tailored for businesses of all sizes.
           </p>
         </div>
@@ -46,12 +46,6 @@ export const Footer = () => {
             >
               Automation Solutions
             </Link>
-            <Link
-              href="/cloud-solutions"
-              className="hover:text-green-600 transition"
-            >
-              Cloud Solutions
-            </Link>
           </nav>
         </div>
 
@@ -68,12 +62,6 @@ export const Footer = () => {
             >
               Who We Are
             </Link>
-            <ScheduleButton
-              className="hover:text-green-600 transition text-left"
-              withArrow={false}
-            >
-              Schedule a Consultation
-            </ScheduleButton>
           </nav>
         </div>
 

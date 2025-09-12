@@ -41,7 +41,6 @@ export const Header = () => {
   const navLinks = [
     { href: "/web-services", label: "Web Development" },
     { href: "/automation-solutions", label: "Automation Solutions" },
-    { href: "/cloud-solutions", label: "Cloud Solutions" },
     { href: "/our-works", label: "Our Works" },
     { href: "/company", label: "Who We Are" },
   ];

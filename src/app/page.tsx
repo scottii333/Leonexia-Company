@@ -43,7 +43,7 @@ export default function Page() {
               value.
             </p>
             <ScheduleButton
-              className="group flex items-center gap-2 bg-black text-white border border-black p-3 rounded-md w-[13rem] text-center font-medium md:text-[1.5rem] md:w-[18rem]
+              className="group flex items-center gap-2 bg-[#D1F470] text-[#213524 ] border border-black p-3 rounded-md w-[13rem] text-center font-medium md:text-[1.5rem] md:w-[18rem]
              transition-colors duration-300 
              hover:bg-white hover:text-green-600"
             />
@@ -202,58 +202,64 @@ export default function Page() {
 
           <div className="flex flex-col flex-wrap justify-center items-center md:flex-row gap-[1.5rem]">
             <div
-              className="w-[18rem] h-[18rem] shadow-lg rounded-md 
-             border border-transparent 
-             hover:border-green-300 hover:scale-[1.01] 
-             transition-all duration-300 ease-in-out 
-            flex flex-col items-center justify-center p-[2rem] text-center"
+              className="w-[18rem] h-[18rem] md:w-[25rem] md:h-[25rem] shadow-lg rounded-md 
+       border border-transparent 
+       hover:border-green-300 hover:scale-[1.01] 
+       transition-all duration-300 ease-in-out 
+       flex flex-col items-center justify-center p-[2rem] text-center"
             >
-              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-green-100">
-                <Network className="text-green-600" size={35} />
+              <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center rounded-xl bg-green-100">
+                <Network className="text-green-600" size={45} />
               </div>
-              <p className="mt-2 text-[1.3rem] font-bold ">
+              <p className="mt-3 text-[1.3rem] md:text-[1.8rem] font-bold ">
                 60% <br />
-                <span className="font-semibold text-[1rem]">
+                <span className="font-semibold text-[1rem] md:text-[1.3rem]">
                   More Google Traffic
                 </span>
               </p>
-              <p>Boost visibility and organic clicks with optimized pages.</p>
+              <p className="text-[1rem] md:text-[1.2rem]">
+                Boost visibility and organic clicks with optimized pages.
+              </p>
             </div>
+
             <div
-              className="w-[18rem] h-[18rem] shadow-lg rounded-md 
-             border border-transparent 
-             hover:border-green-300 hover:scale-[1.01] 
-             transition-all duration-300 ease-in-out 
-              flex flex-col items-center justify-center p-[2rem] text-center"
+              className="w-[18rem] h-[18rem] md:w-[25rem] md:h-[25rem] shadow-lg rounded-md 
+       border border-transparent 
+       hover:border-green-300 hover:scale-[1.01] 
+       transition-all duration-300 ease-in-out 
+       flex flex-col items-center justify-center p-[2rem] text-center"
             >
-              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-green-100">
-                <BadgeDollarSign className="text-green-600" size={35} />
+              <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center rounded-xl bg-green-100">
+                <BadgeDollarSign className="text-green-600" size={45} />
               </div>
-              <p className="mt-2 text-[1.3rem] font-bold ">
+              <p className="mt-3 text-[1.3rem] md:text-[1.8rem] font-bold ">
                 10x <br />
-                <span className="font-semibold text-[1rem]">
+                <span className="font-semibold text-[1rem] md:text-[1.3rem]">
                   Turn search into measurable sales and leads.
                 </span>
               </p>
-              <p>Boost visibility and organic clicks with optimized pages.</p>
+              <p className="text-[1rem] md:text-[1.2rem]">
+                Boost visibility and organic clicks with optimized pages.
+              </p>
             </div>
+
             <div
-              className="w-[18rem] h-[18rem] shadow-lg rounded-md 
-             border border-transparent 
-             hover:border-green-300 hover:scale-[1.01] 
-             transition-all duration-300 ease-in-out 
-             flex flex-col items-center justify-center p-[2rem] text-center"
+              className="w-[18rem] h-[18rem] md:w-[25rem] md:h-[25rem] shadow-lg rounded-md 
+       border border-transparent 
+       hover:border-green-300 hover:scale-[1.01] 
+       transition-all duration-300 ease-in-out 
+       flex flex-col items-center justify-center p-[2rem] text-center"
             >
-              <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-green-100">
-                <CloudCheck className="text-green-600" size={35} />
+              <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center rounded-xl bg-green-100">
+                <CloudCheck className="text-green-600" size={45} />
               </div>
-              <p className="mt-2 text-[1.3rem] font-bold ">
+              <p className="mt-3 text-[1.3rem] md:text-[1.8rem] font-bold ">
                 24/7 <br />
-                <span className="font-semibold text-[1rem]">
+                <span className="font-semibold text-[1rem] md:text-[1.3rem]">
                   Internet Presence
                 </span>
               </p>
-              <p>
+              <p className="text-[1rem] md:text-[1.2rem]">
                 Be discoverable around the clock with strong rankings across
                 devices.
               </p>
@@ -572,12 +578,12 @@ export default function Page() {
           </div>
           <Link
             href="/case-studies"
-            className="group inline-flex items-center justify-center gap-2 bg-green-600 text-white border border-green-800 p-3 rounded-md w-[14rem] text-center font-medium md:text-[1.5rem] md:w-[20rem] transition-colors duration-300 hover:bg-white hover:text-green-600"
+            className="group inline-flex items-center justify-center gap-2 bg-[#D1F470] text-[#213524] border border-green-800 p-3 rounded-md w-[14rem] text-center font-medium md:text-[1.5rem] md:w-[20rem] transition-colors duration-300 hover:bg-white hover:text-green-600"
           >
             View all Our Works
             <ArrowRight
               size={18}
-              className="ml-3 text-white animate-bounce group-hover:text-green-600"
+              className="ml-3 text-[#213524] animate-bounce group-hover:text-green-600"
             />
           </Link>
         </section>

@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "Automation Solutions Philippines",
     "Software Development Philippines",
   ],
+  icons: {
+    icon: "/Leonexia.png", // 👈 PNG works here
+  },
 };
 
 export default function RootLayout({

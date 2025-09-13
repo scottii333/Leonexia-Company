@@ -134,27 +134,22 @@ export default function CompanyPage() {
       </section>
 
       {/* ✅ Team Section */}
-      <section className="mt-[6rem] px-[2rem] md:px-[6rem]">
+      <section className="mt-[6rem] px-[2rem] md:px-[6rem] flex flex-col items-center">
         <h2 className="text-[2rem] md:text-[2.5rem] font-semibold text-center mb-[3rem]">
           Meet the <span className="text-green-600">Team</span>
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2.5rem] justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-[2.5rem] justify-items-center ">
           {[
             {
               name: "Angel Scott",
               role: "Full-Stack Developer, Automation Engineer & DevOps",
-              img: "/team/",
+              img: "/team/angel.jpg",
             },
             {
               name: "Janeille Trixie",
               role: "UI/UX Designer & Frontend Developer",
-              img: "/team/",
-            },
-            {
-              name: "Melady ",
-              role: "Client Success & Project Management",
-              img: "/team/",
+              img: "/team/janeille.jpg",
             },
           ].map((member, idx) => (
             <div

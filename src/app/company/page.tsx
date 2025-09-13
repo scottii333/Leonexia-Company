@@ -190,7 +190,7 @@ export default function CompanyPage() {
           enterprise, we’re here to help you scale through innovation and
           technology.
         </p>
-        <ScheduleButton className="group mt-[2rem] inline-flex items-center justify-center gap-[0.8rem] bg-green-600 text-white border border-green-600 p-[1rem] rounded-md w-[14rem] md:w-[18rem] font-medium text-[1rem] md:text-[1.3rem] transition-colors duration-300 hover:bg-white hover:text-green-600" />
+        <ScheduleButton className="group mt-[2rem] inline-flex items-center justify-center gap-[0.8rem] bg-[#D1F470] text-[#213524] border border-green-600 p-[1rem] rounded-md w-[14rem] md:w-[18rem] font-medium text-[1rem] md:text-[1.3rem] transition-colors duration-300 hover:bg-white hover:text-green-600 cursor-pointer" />
       </section>
     </main>
   );

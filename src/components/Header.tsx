@@ -15,6 +15,7 @@ import {
 import { ScheduleButton } from "./ScheduleButton";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export const Header = () => {
   const pathname = usePathname();
@@ -54,11 +55,20 @@ export const Header = () => {
         border-b border-[#355E34]
         shadow-sm"
     >
-      <Link
-        href="/"
-        className="relative inline-block text-[2rem] font-semibold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[5px] after:w-1/2 after:bg-[#355E34]"
-      >
-        Leonexia
+      <Link href="/" className="flex items-center gap-1 relative">
+        {/* Logo image */}
+        <Image
+          src="/LeonexiaTransparent.png"
+          alt="Leonexia Logo"
+          width={50}
+          height={50}
+          priority
+        />
+
+        {/* Text logo with underline effect */}
+        <span className="relative inline-block text-[2rem] font-semibold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[5px] after:w-1/2 after:bg-[#355E34]">
+          Leonexia
+        </span>
       </Link>
 
       {/* Mobile Nav - Sheet */}

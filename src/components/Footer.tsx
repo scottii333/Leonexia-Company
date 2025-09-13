@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -9,14 +10,23 @@ export const Footer = () => {
       role="contentinfo"
     >
       <div className="flex flex-col md:flex-row justify-between flex-wrap gap-[5rem]">
-        <div className="max-w-[20rem] flex flex-col gap-[1rem]">
-          <Link
-            href="/"
-            className="relative inline-block text-[2rem] font-semibold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[5px] after:w-1/5 after:bg-[#355E34]"
-          >
-            Leonexia
+        <div className=" flex flex-col gap-[1rem]">
+          <Link href="/" className="flex items-center gap-1 relative">
+            {/* Logo image */}
+            <Image
+              src="/LeonexiaTransparent.png"
+              alt="Leonexia Logo"
+              width={50}
+              height={50}
+              priority
+            />
+
+            {/* Text logo with underline effect */}
+            <span className="relative inline-block text-[2rem] font-semibold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[5px] after:w-1/2 after:bg-[#355E34]">
+              Leonexia
+            </span>
           </Link>
-          <p>
+          <p className="max-w-[20rem]">
             Leonexia offers expert{" "}
             <strong className="text-green-600">
               Web Development in the Philippines

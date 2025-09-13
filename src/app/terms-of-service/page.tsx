@@ -38,65 +38,70 @@ export default function TermsOfServicePage() {
         {/* Intro */}
         <p className="text-[1.2rem] md:text-[1.4rem] text-gray-700 max-w-[55rem] leading-relaxed">
           These Terms of Service (“Terms”) govern your use of{" "}
-          <strong className="text-green-700">Leonexia</strong>’s website,
-          products, and services. By accessing or using our services, you agree
-          to these Terms.
+          <strong className="text-green-700">Leonexia Solutions</strong>’s
+          website and professional services. By scheduling a consultation or
+          engaging our services, you agree to these Terms.
         </p>
 
         {/* Sections */}
         <div className="flex flex-col items-center text-left gap-[2rem] max-w-[60rem] mt-[2rem]">
           <section>
             <h2 className="text-[1.5rem] font-semibold mb-[0.5rem] text-green-600">
-              1. Agreement to Terms
+              1. Services
             </h2>
             <p className="text-gray-700">
-              By using our website and services, you confirm that you have read,
-              understood, and agree to these Terms. If you do not agree, please
-              discontinue use immediately.
+              Leonexia Solutions is a Philippine-based software development
+              startup specializing in web development, workflow automation, and
+              custom digital solutions. We may update or expand our services to
+              improve quality and adapt to client needs.
             </p>
           </section>
 
           <section>
             <h2 className="text-[1.5rem] font-semibold mb-[0.5rem] text-green-600">
-              2. Services Provided
+              2. Consultations via Cal.com
             </h2>
             <p className="text-gray-700">
-              Leonexia provides web development, UI/UX design, automation, and
-              cloud-based solutions. We may update or modify our services at any
-              time to improve quality and performance.
+              We use Cal.com to schedule consultations. By booking a meeting,
+              you agree to share your name, email, and other relevant details
+              required for scheduling. These details are used solely for
+              communication and service delivery. Cal.com’s terms and privacy
+              policies apply when you use their platform.
             </p>
           </section>
 
           <section>
             <h2 className="text-[1.5rem] font-semibold mb-[0.5rem] text-green-600">
-              3. User Responsibilities
+              3. Client Responsibilities
             </h2>
             <p className="text-gray-700">
-              You agree to provide accurate information, comply with applicable
-              laws, and use our services only for lawful purposes. Misuse of our
-              services may result in suspension or termination.
+              You agree to provide accurate information during consultations and
+              service agreements. You are responsible for ensuring that any
+              content, data, or materials you provide do not infringe on third
+              party rights or applicable laws.
             </p>
           </section>
 
           <section>
             <h2 className="text-[1.5rem] font-semibold mb-[0.5rem] text-green-600">
-              4. Payments and Billing
+              4. Payments
             </h2>
             <p className="text-gray-700">
-              All payments for services must be made according to the agreed
-              terms in your contract or invoice. Late payments may result in
-              service suspension until balances are cleared.
+              Payments for services must be made in accordance with agreed
+              proposals, contracts, or invoices. Failure to make timely payments
+              may result in suspension of work or termination of services.
             </p>
           </section>
 
           <section>
             <h2 className="text-[1.5rem] font-semibold mb-[0.5rem] text-green-600">
-              5. Termination
+              5. Intellectual Property
             </h2>
             <p className="text-gray-700">
-              We reserve the right to suspend or terminate services if you
-              violate these Terms or engage in unlawful activity. You may also
-              terminate services at any time by notifying us in writing.
+              Unless otherwise agreed, intellectual property rights for software
+              or deliverables developed by Leonexia Solutions remain our
+              property until full payment is received, after which rights may be
+              transferred as outlined in the project agreement.
             </p>
           </section>
 
@@ -105,28 +110,51 @@ export default function TermsOfServicePage() {
               6. Limitation of Liability
             </h2>
             <p className="text-gray-700">
-              Leonexia is not liable for indirect, incidental, or consequential
-              damages arising from the use of our services. Our total liability
-              is limited to the fees paid for the specific service.
+              While we strive to deliver reliable and secure solutions, Leonexia
+              Solutions is not liable for indirect, incidental, or consequential
+              damages, including but not limited to data loss, downtime, or lost
+              profits, arising from use of our services.
             </p>
           </section>
 
           <section>
             <h2 className="text-[1.5rem] font-semibold mb-[0.5rem] text-green-600">
-              7. Changes to Terms
+              7. Termination
             </h2>
             <p className="text-gray-700">
-              We may update these Terms from time to time. Updates will be
-              posted on this page with a revised effective date. Continued use
-              of our services means acceptance of the updated Terms.
+              Either party may terminate services by written notice. Leonexia
+              Solutions reserves the right to suspend or terminate services if
+              these Terms are violated or payment obligations are not met.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-[1.5rem] font-semibold mb-[0.5rem] text-green-600">
+              8. Governing Law
+            </h2>
+            <p className="text-gray-700">
+              These Terms are governed by the laws of the Republic of the
+              Philippines. Any disputes shall be resolved under the jurisdiction
+              of Philippine courts.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-[1.5rem] font-semibold mb-[0.5rem] text-green-600">
+              9. Updates to Terms
+            </h2>
+            <p className="text-gray-700">
+              We may update these Terms periodically. Updates will be posted on
+              this page with the revised effective date. Continued use of our
+              website or services means acceptance of the updated Terms.
             </p>
           </section>
 
           {/* Closing */}
           <p className="mt-[2rem] text-gray-700">
-            If you have any questions about these Terms, please contact us at{" "}
+            For questions about these Terms of Service, please contact us at{" "}
             <span className="text-green-600 font-semibold">
-              support@leonexia.com
+              leonexia.solutions@gmail.com
             </span>
             .
           </p>

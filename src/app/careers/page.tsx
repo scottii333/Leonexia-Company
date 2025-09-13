@@ -58,7 +58,7 @@ export default function CareersPage() {
           you! If you’re interested in working with us in the future, feel free
           to send your resume to{" "}
           <span className="text-green-600 font-semibold">
-            careers@leonexia.com
+            leonexia.solutions@gmail.com
           </span>{" "}
           and we’ll reach out when opportunities become available.
         </p>

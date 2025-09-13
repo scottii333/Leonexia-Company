@@ -45,11 +45,11 @@ export const TechStackMarquee: React.FC = () => {
   return (
     <div
       ref={marqueeRef}
-      className="relative overflow-hidden w-full py-10 bg-gradient-to-r from-green-700 via-green-800 to-green-900"
+      className="relative overflow-hidden w-full py-10 bg-[#213524]"
     >
-      {/* Fade Overlays */}
-      <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-green-900 to-transparent pointer-events-none z-10"></div>
-      <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-green-900 to-transparent pointer-events-none z-10"></div>
+      {/* Fade Overlays (blend with parent bg) */}
+      <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-[#213524] to-transparent pointer-events-none z-10"></div>
+      <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-[#213524] to-transparent pointer-events-none z-10"></div>
 
       {/* Marquee Track */}
       <div className="flex whitespace-nowrap gap-[5rem] marquee-track">
@@ -58,15 +58,15 @@ export const TechStackMarquee: React.FC = () => {
             key={index}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="group flex flex-col items-center justify-center min-w-[10rem]"
+            className="flex flex-col items-center justify-center min-w-[10rem]"
           >
-            {/* Logo */}
-            <div className="relative w-[7rem] h-[7rem] mb-3 transition-transform duration-300 ease-in-out group-hover:scale-110">
+            {/* Logo (always white, scale on hover) */}
+            <div className="relative w-[7rem] h-[7rem] mb-3 transition-transform duration-300 ease-in-out hover:scale-110">
               <Image
                 src={tool.logo}
                 alt={tool.name}
                 fill
-                className="object-contain filter invert brightness-0 saturate-0 transition-all duration-300 group-hover:invert-0 group-hover:brightness-100 group-hover:saturate-100"
+                className="object-contain filter invert brightness-0 saturate-0"
               />
             </div>
           </div>

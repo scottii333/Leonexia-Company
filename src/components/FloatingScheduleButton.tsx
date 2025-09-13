@@ -32,10 +32,10 @@ export const FloatingScheduleButton = () => {
       type="button"
       onClick={openCal}
       disabled={!ready}
-      className="fixed bottom-6 right-6 px-4 py-2 bg-green-700 text-white rounded-full shadow-lg 
-                 hover:bg-white hover:text-green-700 border border-green-700 
-                 transition-colors duration-300 z-50 
-                 md:hidden"
+      className="fixed bottom-2 right-2 px-4 py-2 bg-[#D1F470] text-[#11110D] rounded-full shadow-lg 
+             hover:bg-white hover:text-[#355E34] border border-[#355E34] 
+             transition duration-300 ease-in-out hover:scale-105 z-50 
+             md:hidden cursor-pointer"
       aria-label="Schedule a consultation via Cal.com"
     >
       Schedule A Meeting

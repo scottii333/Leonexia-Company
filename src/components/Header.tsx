@@ -24,8 +24,8 @@ export const Header = () => {
     transition-colors duration-300
     ${
       pathname === path
-        ? "bg-green-100 font-semibold text-green-500 border-green-500"
-        : "border-transparent hover:bg-green-100 hover:text-green-500 hover:border-green-500"
+        ? "bg-[#D1F470] font-semibold text-[#11110] border-[#355E34]"
+        : "border-transparent hover:bg-[#D1F470] hover:text-[#11110] hover:border-[#355E34]"
     }
     md:w-auto md:px-3 md:py-1 md:border-0 md:bg-transparent 
     md:hover:bg-transparent
@@ -51,12 +51,12 @@ export const Header = () => {
         flex justify-between items-center
         p-4 md:p-7 md:pl-10
         bg-white/30 backdrop-blur-md
-        border-b border-green-500
+        border-b border-[#355E34]
         shadow-sm"
     >
       <Link
         href="/"
-        className="relative inline-block text-[2rem] font-semibold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[4px] after:w-1/2 after:bg-green-600"
+        className="relative inline-block text-[2rem] font-semibold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[5px] after:w-1/2 after:bg-[#355E34]"
       >
         Leonexia
       </Link>
@@ -107,9 +107,9 @@ export const Header = () => {
           </Link>
         ))}
         <ScheduleButton
-          className="md:px-4 md:py-2 md:bg-green-700 md:rounded-md md:text-white
-    md:hover:bg-white md:hover:text-green-700 md:border md:border-green-700
-    transition-colors duration-300"
+          className="md:px-4 md:py-2 md:bg-[#D1F470] md:rounded-md md:text-black font-semibold
+    md:hover:bg-white md:hover:text-[#213524] md:border md:border-[#213524]
+    transition duration-300 hover:scale-105 cusrsor-pointer"
           withArrow={false}
         >
           Schedule Now

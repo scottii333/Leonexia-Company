@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Leonexia",
   },
   description:
-    "Leonexia offers expert Web Development in the Philippines along with UI/UX Design, Automation Solutions  tailored for businesses.",
+    "Leonexia offers expert Web Development in the Philippines along with UI/UX Design and Workflow Automation tailored for businesses.",
   keywords: [
     "Web Development Philippines",
     "Philippines Web Development Company",
@@ -19,7 +19,24 @@ export const metadata: Metadata = {
     "Software Development Philippines",
   ],
   icons: {
-    icon: "/Leonexia.png", // 👈 PNG works here
+    icon: "/Leonexia.png", // 👈 favicon/logo in /public
+  },
+  openGraph: {
+    title: "Leonexia: Web Development in the Philippines",
+    description:
+      "Expert Web Development, UI/UX Design, and Workflow Automation Solutions for modern businesses.",
+    url: "https://leonexia.com",
+    siteName: "Leonexia",
+    images: [
+      {
+        url: "https://leonexia.com/Leonexia.png", // 👈 must be absolute URL
+        width: 512,
+        height: 512,
+        alt: "Leonexia Logo",
+      },
+    ],
+    locale: "en_PH",
+    type: "website",
   },
 };
 
@@ -34,6 +51,19 @@ export default function RootLayout({
         <link
           rel="stylesheet"
           href="https://api.fontshare.com/v2/css?f[]=erode@300,400,500,600,700&display=swap"
+        />
+        {/* ✅ Structured Data for Google */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Leonexia",
+              url: "https://leonexia.com",
+              logo: "https://leonexia.com/Leonexia.png", // 👈 absolute URL to logo
+            }),
+          }}
         />
       </head>
       <body className="antialiased font-sans min-h-screen flex flex-col">

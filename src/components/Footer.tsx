@@ -4,7 +4,7 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <footer
-      className="bg-grid min-h-[15rem] border-green-500 p-[2rem] md:p-[4rem]  
+      className="bg-grid min-h-[15rem] p-[2rem] md:p-[4rem]  
       "
       role="contentinfo"
     >
@@ -12,7 +12,7 @@ export const Footer = () => {
         <div className="max-w-[20rem] flex flex-col gap-[1rem]">
           <Link
             href="/"
-            className="relative inline-block text-[2rem] font-semibold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[4px] after:w-1/2 after:bg-green-600"
+            className="relative inline-block text-[2rem] font-semibold after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[5px] after:w-1/5 after:bg-[#355E34]"
           >
             Leonexia
           </Link>

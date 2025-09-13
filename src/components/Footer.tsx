@@ -91,13 +91,22 @@ export const Footer = () => {
         <div className="max-w-[20rem] flex flex-col gap-2">
           <p className="font-semibold text-[1.5rem]">Social Media</p>
           <nav className="flex flex-col gap-2">
-            <Link href="/tiktok" className="hover:text-green-600 transition">
+            <Link
+              href="https://www.tiktok.com/@leonexia.solutions"
+              className="hover:text-green-600 transition"
+            >
               TikTok
             </Link>
-            <Link href="/instagram" className="hover:text-green-600 transition">
-              Instagram
+            <Link
+              href="https://www.facebook.com/LeonexiaSolutions"
+              className="hover:text-green-600 transition"
+            >
+              Facebook
             </Link>
-            <Link href="/linkedin" className="hover:text-green-600 transition">
+            <Link
+              href="https://www.linkedin.com/company/leonexia"
+              className="hover:text-green-600 transition"
+            >
               LinkedIn
             </Link>
           </nav>

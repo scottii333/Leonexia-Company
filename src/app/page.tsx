@@ -504,7 +504,7 @@ export default function Page() {
               <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
                 {/* Image with Zoom Inside */}
                 <Image
-                  src="/techStack/splnd-d.jpeg"
+                  src="/case-study/splnd-d.jpeg"
                   alt="Case Study Image"
                   fill
                   className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
@@ -530,7 +530,7 @@ export default function Page() {
               <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
                 {/* Image with Zoom Inside */}
                 <Image
-                  src="/techStack/coffee.jpeg"
+                  src="/case-study/coffee.jpeg"
                   alt="Case Study Image"
                   fill
                   className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
@@ -556,7 +556,7 @@ export default function Page() {
               <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
                 {/* Image with Zoom Inside */}
                 <Image
-                  src="/techStack/splnd-d.jpeg"
+                  src="/case-study/Mt-AutoSpa.png"
                   alt="Case Study Image"
                   fill
                   className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
@@ -569,10 +569,10 @@ export default function Page() {
               </div>
 
               {/* Text Content */}
-              <p className="font-bold text-[1.3rem] mt-2">SPLND-D</p>
-              <p>E-Commerce Website</p>
+              <p className="font-bold text-[1.3rem] mt-2">MT Auto Spa</p>
+              <p>Auto Care, Detailing, and Spa Website</p>
               <p className="text-green-700 font-semibold text-[1.2rem]">
-                Premium Clothing
+                Premium Automotive
               </p>
             </div>
           </div>

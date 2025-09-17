@@ -17,37 +17,19 @@ export default function OurWorksPage() {
       title: "SPLND-D",
       type: "E-Commerce Website",
       industry: "Premium Clothing",
-      img: "/techStack/splnd-d.jpeg",
+      img: "/case-study/splnd-d.jpeg",
     },
     {
       title: "DaCopi",
       type: "Coffee Shop Website",
       industry: "Premium Coffee",
-      img: "/techStack/coffee.jpeg",
+      img: "/case-study/coffee.jpeg",
     },
     {
-      title: "SPLND-D",
-      type: "E-Commerce Website",
-      industry: "Premium Clothing",
-      img: "/techStack/splnd-d.jpeg",
-    },
-    {
-      title: "DaCopi",
-      type: "Coffee Shop Website",
-      industry: "Premium Coffee",
-      img: "/techStack/coffee.jpeg",
-    },
-    {
-      title: "SPLND-D",
-      type: "E-Commerce Website",
-      industry: "Premium Clothing",
-      img: "/techStack/splnd-d.jpeg",
-    },
-    {
-      title: "DaCopi",
-      type: "Coffee Shop Website",
-      industry: "Premium Coffee",
-      img: "/techStack/coffee.jpeg",
+      title: "MT Auto Spa",
+      type: "Auto Care, Detailing, and Spa Website",
+      industry: "Premium Automotive",
+      img: "/case-study/Mt-AutoSpa.png",
     },
   ];
 

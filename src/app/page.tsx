@@ -501,13 +501,13 @@ export default function Page() {
             {/* Case Study 1 Card */}
             <div className="w-full max-w-[28rem] h-[23rem]">
               {/* Image Container */}
-              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+              <div className="relative w-full h-[16rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
                 {/* Image with Zoom Inside */}
                 <Image
                   src="/case-study/splnd-d.jpeg"
                   alt="Case Study Image"
                   fill
-                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                  className="object-fill object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
                 />
 
                 {/* Overlay with gray background + Eye Icon */}
@@ -527,13 +527,13 @@ export default function Page() {
             {/* Case Study 2 Card */}
             <div className="w-full max-w-[28rem] h-[23rem]">
               {/* Image Container */}
-              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+              <div className="relative w-full  h-[16rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
                 {/* Image with Zoom Inside */}
                 <Image
                   src="/case-study/coffee.jpeg"
                   alt="Case Study Image"
                   fill
-                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                  className="object-fill  object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
                 />
 
                 {/* Overlay with gray background + Eye Icon */}
@@ -553,13 +553,13 @@ export default function Page() {
             {/* Case Study 3 Card */}
             <div className="w-full max-w-[28rem] h-[23rem]">
               {/* Image Container */}
-              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+              <div className="relative w-full h-[16rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
                 {/* Image with Zoom Inside */}
                 <Image
                   src="/case-study/Mt-AutoSpa.png"
                   alt="Case Study Image"
                   fill
-                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                  className="object-fill  object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
                 />
 
                 {/* Overlay with gray background + Eye Icon */}

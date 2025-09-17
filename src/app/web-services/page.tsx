@@ -777,7 +777,7 @@ export default function WebServicesPage() {
               <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
                 {/* Image with Zoom Inside */}
                 <Image
-                  src="/techStack/splnd-d.jpeg"
+                  src="/case-study/splnd-d.jpeg"
                   alt="Case Study Image"
                   fill
                   className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
@@ -802,7 +802,7 @@ export default function WebServicesPage() {
               <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
                 {/* Image with Zoom Inside */}
                 <Image
-                  src="/techStack/coffee.jpeg"
+                  src="/case-study/coffee.jpeg"
                   alt="Case Study Image"
                   fill
                   className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
@@ -826,7 +826,7 @@ export default function WebServicesPage() {
               <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
                 {/* Image with Zoom Inside */}
                 <Image
-                  src="/techStack/splnd-d.jpeg"
+                  src="/case-study/Mt-AutoSpa.png"
                   alt="Case Study Image"
                   fill
                   className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
@@ -839,83 +839,10 @@ export default function WebServicesPage() {
               </div>
 
               {/* Text Content */}
-              <p className="font-bold text-[1.3rem] mt-2">SPLND-D</p>
-              <p>E-Commerce Website</p>
+              <p className="font-bold text-[1.3rem] mt-2">MT Auto Spa</p>
+              <p>Auto Care, Detailing, and Spa Website</p>
               <p className="text-green-700 font-semibold text-[1.2rem]">
-                Premium Clothing
-              </p>
-            </div>
-
-            <div className="w-full max-w-[28rem] h-[23rem]">
-              {/* Image Container */}
-              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
-                {/* Image with Zoom Inside */}
-                <Image
-                  src="/techStack/coffee.jpeg"
-                  alt="Case Study Image"
-                  fill
-                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
-                />
-
-                {/* Overlay with gray background + Eye Icon */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Eye size={40} className="text-white drop-shadow-lg" />
-                </div>
-              </div>
-
-              {/* Text Content */}
-              <p className="font-bold text-[1.3rem] mt-2">DaCopi</p>
-              <p>Coffee Shops Website</p>
-              <p className="text-green-700 font-semibold text-[1.2rem]">
-                Premium Coffee
-              </p>
-            </div>
-            <div className="w-full max-w-[28rem] h-[23rem]">
-              {/* Image Container */}
-              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
-                {/* Image with Zoom Inside */}
-                <Image
-                  src="/techStack/splnd-d.jpeg"
-                  alt="Case Study Image"
-                  fill
-                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
-                />
-
-                {/* Overlay with gray background + Eye Icon */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Eye size={40} className="text-white drop-shadow-lg" />
-                </div>
-              </div>
-
-              {/* Text Content */}
-              <p className="font-bold text-[1.3rem] mt-2">SPLND-D</p>
-              <p>E-Commerce Website</p>
-              <p className="text-green-700 font-semibold text-[1.2rem]">
-                Premium Clothing
-              </p>
-            </div>
-            <div className="w-full max-w-[28rem] h-[23rem]">
-              {/* Image Container */}
-              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
-                {/* Image with Zoom Inside */}
-                <Image
-                  src="/techStack/coffee.jpeg"
-                  alt="Case Study Image"
-                  fill
-                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
-                />
-
-                {/* Overlay with gray background + Eye Icon */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Eye size={40} className="text-white drop-shadow-lg" />
-                </div>
-              </div>
-
-              {/* Text Content */}
-              <p className="font-bold text-[1.3rem] mt-2">DaCopi</p>
-              <p>Coffee Shops Website</p>
-              <p className="text-green-700 font-semibold text-[1.2rem]">
-                Premium Coffee
+                Premium Automotive
               </p>
             </div>
           </div>

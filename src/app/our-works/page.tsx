@@ -270,33 +270,31 @@ export default function OurWorksPage() {
             </p>
           </div>
 
-          <div className="w-full min-h-screen p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
-            {works.map((work, idx) => (
-              <div
-                key={idx}
-                className="w-full max-w-[28rem] h-[23rem] bg-white shadow-lg rounded-lg overflow-hidden group cursor-pointer"
-              >
-                {/* Image */}
-                <div className="relative w-full h-[15rem] overflow-hidden">
+          <div className="w-full min-auto-screen p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+            {works.map((work, index) => (
+              <div key={index} className="w-full max-w-[28rem] h-[23rem]">
+                {/* Image Container */}
+                <div className="relative w-full h-[16rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                  {/* Image with Zoom Inside */}
                   <Image
                     src={work.img}
                     alt={work.title}
                     fill
-                    className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                    className="object-fill object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
                   />
+
+                  {/* Overlay with gray background + Eye Icon */}
                   <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <Eye size={40} className="text-white drop-shadow-lg" />
                   </div>
                 </div>
 
-                {/* Text */}
-                <div className="p-[1rem] text-center">
-                  <p className="font-bold text-[1.3rem]">{work.title}</p>
-                  <p className="text-gray-600">{work.type}</p>
-                  <p className="text-green-700 font-semibold text-[1.2rem]">
-                    {work.industry}
-                  </p>
-                </div>
+                {/* Text Content */}
+                <p className="font-bold text-[1.3rem] mt-2">{work.title}</p>
+                <p>{work.type}</p>
+                <p className="text-green-700 font-semibold text-[1.2rem]">
+                  {work.industry}
+                </p>
               </div>
             ))}
           </div>

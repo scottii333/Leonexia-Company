@@ -52,6 +52,9 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://api.fontshare.com/v2/css?f[]=erode@300,400,500,600,700&display=swap"
         />
+
+        <link rel="icon" href="/Leonexia.png" type="image/png" />
+
         {/* ✅ Structured Data for Google */}
         <script
           type="application/ld+json"

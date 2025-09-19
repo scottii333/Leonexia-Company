@@ -31,6 +31,27 @@ import { TechStackMarquee } from "@/components/TechStackMarquee";
 import Image from "next/image";
 
 export default function WebServicesPage() {
+  const works = [
+    {
+      title: "SPLND-D",
+      type: "E-Commerce Website",
+      industry: "Premium Clothing",
+      img: "/case-study/splnd-d.jpeg",
+    },
+    {
+      title: "DaCopi",
+      type: "Coffee Shop Website",
+      industry: "Premium Coffee",
+      img: "/case-study/coffee.jpeg",
+    },
+    {
+      title: "MT Auto Spa",
+      type: "Auto Care, Detailing, and Spa Website",
+      industry: "Premium Automotive",
+      img: "/case-study/Mt-AutoSpa.png",
+    },
+  ];
+
   return (
     <main>
       <HomeGsap>
@@ -759,95 +780,53 @@ export default function WebServicesPage() {
           <TechStackMarquee />
         </div>
 
-        <section className="w-full mt-[5rem] mb-[10rem] flex flex-col gap-10 justify-center items-center p-[2rem]">
+        <section
+          id="case-study"
+          className="w-full mt-[5rem] mb-[10rem] flex flex-col gap-10 justify-center items-center p-[2rem]"
+        >
+          {/* ✅ Case Studies Section */}
           <div className="flex flex-col gap-5 items-center text-center">
             <p className="font-semibold text-green-600 text-[1.5rem] md:text-[2.5rem]">
               Case Study
             </p>
-            <p className="text-center text-[1rem] md:text-[1.6rem] max-w-[60rem] leading-relaxed ">
-              A showcase of our latest projects and the results we&apos;ve
-              achieved for our clients
+            <p className="text-center text-[1rem] md:text-[1.6rem] max-w-[60rem] leading-relaxed">
+              A showcase of our past works and the results we&apos;ve achieved
+              for our clients
             </p>
           </div>
 
-          <div className="w-full min-h-screen p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
-            {/* Case Study Card */}
-            <div className="w-full max-w-[28rem] h-[23rem]">
-              {/* Image Container */}
-              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
-                {/* Image with Zoom Inside */}
-                <Image
-                  src="/case-study/splnd-d.jpeg"
-                  alt="Case Study Image"
-                  fill
-                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
-                />
+          <div className="w-full min-auto-screen p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+            {works.map((work, index) => (
+              <div key={index} className="w-full max-w-[28rem] h-[23rem]">
+                {/* Image Container */}
+                <div className="relative w-full h-[16rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                  {/* Image with Zoom Inside */}
+                  <Image
+                    src={work.img}
+                    alt={work.title}
+                    fill
+                    className="object-fill object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
+                  />
 
-                {/* Overlay with gray background + Eye Icon */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Eye size={40} className="text-white drop-shadow-lg" />
+                  {/* Overlay with gray background + Eye Icon */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Eye size={40} className="text-white drop-shadow-lg" />
+                  </div>
                 </div>
+
+                {/* Text Content */}
+                <p className="font-bold text-[1.3rem] mt-2">{work.title}</p>
+                <p>{work.type}</p>
+                <p className="text-green-700 font-semibold text-[1.2rem]">
+                  {work.industry}
+                </p>
               </div>
-
-              {/* Text Content */}
-              <p className="font-bold text-[1.3rem] mt-2">SPLND-D</p>
-              <p>E-Commerce Website</p>
-              <p className="text-green-700 font-semibold text-[1.2rem]">
-                Premium Clothing
-              </p>
-            </div>
-
-            <div className="w-full max-w-[28rem] h-[23rem]">
-              {/* Image Container */}
-              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
-                {/* Image with Zoom Inside */}
-                <Image
-                  src="/case-study/coffee.jpeg"
-                  alt="Case Study Image"
-                  fill
-                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
-                />
-
-                {/* Overlay with gray background + Eye Icon */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Eye size={40} className="text-white drop-shadow-lg" />
-                </div>
-              </div>
-
-              {/* Text Content */}
-              <p className="font-bold text-[1.3rem] mt-2">DaCopi</p>
-              <p>Coffee Shops Website</p>
-              <p className="text-green-700 font-semibold text-[1.2rem]">
-                Premium Coffee
-              </p>
-            </div>
-            <div className="w-full max-w-[28rem] h-[23rem]">
-              {/* Image Container */}
-              <div className="relative w-full h-[15rem] group cursor-pointer overflow-hidden rounded-lg shadow-lg">
-                {/* Image with Zoom Inside */}
-                <Image
-                  src="/case-study/Mt-AutoSpa.png"
-                  alt="Case Study Image"
-                  fill
-                  className="object-cover object-top transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:opacity-70"
-                />
-
-                {/* Overlay with gray background + Eye Icon */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Eye size={40} className="text-white drop-shadow-lg" />
-                </div>
-              </div>
-
-              {/* Text Content */}
-              <p className="font-bold text-[1.3rem] mt-2">MT Auto Spa</p>
-              <p>Auto Care, Detailing, and Spa Website</p>
-              <p className="text-green-700 font-semibold text-[1.2rem]">
-                Premium Automotive
-              </p>
-            </div>
+            ))}
           </div>
+
+          {/* ✅ View All Works CTA */}
           <Link
-            href="/case-studies"
+            href="/our-works"
             className="group inline-flex items-center justify-center gap-2 bg-[#D1F470] text-[#213524] border border-green-800 p-3 rounded-md w-[14rem] text-center font-medium md:text-[1.5rem] md:w-[20rem] transition-colors duration-300 hover:bg-white hover:text-green-600"
           >
             View all Our Works

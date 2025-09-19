@@ -144,12 +144,12 @@ export default function CompanyPage() {
             {
               name: "Angel Scott",
               role: "Full-Stack Developer, Automation Engineer & DevOps",
-              img: "/team/angel.jpg",
+              img: "/team/scott.png",
             },
             {
               name: "Janeille Trixie",
               role: "UI/UX Designer & Frontend Developer",
-              img: "/team/janeille.jpg",
+              img: "/team/trixie.png",
             },
           ].map((member, idx) => (
             <div
@@ -159,7 +159,7 @@ export default function CompanyPage() {
               <div className="relative w-[10rem] h-[10rem] md:w-[15rem] md:h-[15rem] rounded-full overflow-hidden mb-[1.5rem]">
                 <Image
                   src={member.img}
-                  alt={member.name}
+                  alt={`${member.name}, ${member.role}`}
                   fill
                   className="object-cover"
                 />
